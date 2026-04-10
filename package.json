@@ -1,0 +1,32 @@
+{
+  "name": "affiliate-platform",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "test": "vitest run",
+    "db:generate": "dotenv -c -- pnpm --filter @affiliate/db exec prisma generate",
+    "db:migrate": "dotenv -c -- pnpm --filter @affiliate/db exec prisma migrate dev",
+    "db:migrate:deploy": "dotenv -c -- pnpm --filter @affiliate/db exec prisma migrate deploy",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "pipeline": "dotenv -c -- pnpm --filter @affiliate/pipeline run pipeline"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.2",
+    "dotenv-cli": "^11.0.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vitest": "^2.1.8"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20"
+  }
+}

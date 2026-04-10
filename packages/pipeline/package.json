@@ -1,0 +1,21 @@
+{
+  "name": "@affiliate/pipeline",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "vitest run",
+    "pipeline": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@affiliate/db": "workspace:*",
+    "@affiliate/search": "workspace:*",
+    "@prisma/client": "^6.19.3",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.8"
+  }
+}

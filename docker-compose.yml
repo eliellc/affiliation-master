@@ -1,0 +1,22 @@
+# Postgres local pour le dev (site Next + pipeline Prisma).
+# Démarre : pnpm db:up
+# URL dans .env : postgresql://affiliate:affiliate@localhost:5432/affiliate
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: affiliate
+      POSTGRES_PASSWORD: affiliate
+      POSTGRES_DB: affiliate
+    ports:
+      - "5432:5432"
+    volumes:
+      - affiliate_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U affiliate -d affiliate"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  affiliate_pgdata:

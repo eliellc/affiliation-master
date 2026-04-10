@@ -1,0 +1,12 @@
+node_modules
+.turbo
+.next
+dist
+.env
+.env.local
+.env.*
+!.env.example
+*.log
+.DS_Store
+INPUT-DATA-ELIE/
+packages/db/generated

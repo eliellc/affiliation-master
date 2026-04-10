@@ -1,0 +1,29 @@
+# Fichier historiquement nommé deploy.yml : ce workflow exécute uniquement install, tests, migrations Prisma
+# et turbo build sur push main (CI). Le déploiement sur Vercel (ou autre) est géré hors de ce fichier.
+name: Build
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm --filter @affiliate/db exec prisma migrate deploy
+        env:
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      - run: pnpm exec turbo build
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
