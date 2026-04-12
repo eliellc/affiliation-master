@@ -8,6 +8,5 @@ export const prisma =
     log: process.env.NODE_ENV === "development" ? ["query", "error", "warn"] : ["error"],
   });
 
-if (process.env.NODE_ENV !== "production") {
-  globalForPrisma.prisma = prisma;
-}
+/** Réutilise le client sur globalThis en prod (Vercel serverless) pour limiter les connexions au pooler. */
+globalForPrisma.prisma = prisma;

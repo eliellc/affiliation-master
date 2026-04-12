@@ -1,6 +1,7 @@
-# Postgres local pour le dev (site Next + pipeline Prisma).
+# Postgres + Meilisearch locaux (site Next + pipeline).
 # Démarre : pnpm db:up
-# URL dans .env : postgresql://affiliate:affiliate@localhost:5432/affiliate
+# Postgres : postgresql://affiliate:affiliate@localhost:5432/affiliate
+# Meilisearch : MEILISEARCH_HOST=http://127.0.0.1:7700 et MEILISEARCH_API_KEY (voir ci-dessous)
 services:
   postgres:
     image: postgres:16-alpine
@@ -18,5 +19,16 @@ services:
       timeout: 5s
       retries: 5
 
+  meilisearch:
+    image: getmeili/meilisearch:v1.11
+    ports:
+      - "7700:7700"
+    environment:
+      MEILI_MASTER_KEY: "${MEILI_MASTER_KEY:-dev_meili_master_key}"
+      MEILI_NO_ANALYTICS: "true"
+    volumes:
+      - affiliate_meili_data:/meili_data
+
 volumes:
   affiliate_pgdata:
+  affiliate_meili_data:

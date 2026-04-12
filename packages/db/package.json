@@ -10,7 +10,7 @@
     }
   },
   "scripts": {
-    "build": "prisma generate",
+    "build": "prisma generate && mkdir -p dist && node -e \"require('fs').writeFileSync('dist/.prisma-generate','')\"",
     "lint": "eslint src",
     "test": "vitest run"
   },

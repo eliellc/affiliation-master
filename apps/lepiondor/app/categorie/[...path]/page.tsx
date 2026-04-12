@@ -16,6 +16,7 @@ import {
   breadcrumbSchema,
 } from "@affiliate/seo";
 import { siteConfig } from "../../../config";
+import { logDbError } from "../../../lib/log-db-error";
 import { siteId } from "../../../lib/site";
 
 export const revalidate = 3600;
@@ -55,7 +56,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       category.metaDesc,
       hasFilters
     );
-  } catch {
+  } catch (err) {
+    logDbError(`metadata:${path}`, err);
     return { title: titleFromCategoryPath(path) };
   }
 }
@@ -71,7 +73,8 @@ export default async function CategoryPage(props: Props) {
   let dbUnavailable = false;
   try {
     category = await getCategoryByPath(siteId, path);
-  } catch {
+  } catch (err) {
+    logDbError(`getCategoryByPath:${path}`, err);
     dbUnavailable = true;
   }
 
@@ -101,8 +104,10 @@ export default async function CategoryPage(props: Props) {
         <JsonLd data={breadcrumbSchema(path, siteConfig, catRows)} />
         <h1 style={{ color: siteConfig.theme.secondaryColor }}>{displayName}</h1>
         <p style={{ opacity: 0.85, maxWidth: 560 }}>
-          Le catalogue ne peut pas être chargé (base de données absente ou injoignable). Vérifiez
-          DATABASE_URL et relancez le serveur après import des catégories.
+          Le catalogue ne peut pas être chargé (erreur de connexion à la base ou configuration). Vérifiez
+          sur Vercel que <code>DATABASE_URL</code> pointe vers le pooler Supabase (port 6543) avec{" "}
+          <code>pgbouncer=true</code> et <code>connection_limit=1</code>, puis consultez les journaux de
+          déploiement (recherche <code>[lepiondor:db:</code>) pour le message d’erreur exact.
         </p>
         <ProductList products={[]} site={siteConfig} />
       </div>
@@ -117,15 +122,16 @@ export default async function CategoryPage(props: Props) {
     items = r.items;
     total = r.total;
     pageSize = r.pageSize;
-  } catch {
-    /* idem home / blog */
+  } catch (err) {
+    logDbError(`getProductsByCategory:${path}`, err);
   }
   const products = items.map((p) => toCardProduct(p));
 
   let allCats: Awaited<ReturnType<typeof listCategoriesForSite>> = [];
   try {
     allCats = await listCategoriesForSite(siteId);
-  } catch {
+  } catch (err) {
+    logDbError(`listCategoriesForSite`, err);
     allCats = [];
   }
 

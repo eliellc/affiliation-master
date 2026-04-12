@@ -22,9 +22,11 @@ export const siteConfig: SiteConfig = {
       "En tant que partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.",
   },
 
+  // Slugs = chemins racine réels dans les catégories importées (products.json → ensureCategoryPaths).
+  // « jeux-de-cartes » seul n’existe pas en base ; l’arborescence catalogue utilise jeux-de-cartes-a-collectionner.
   nav: [
     { label: "Jeux de société", slug: "jeux-de-societe" },
-    { label: "Jeux de cartes", slug: "jeux-de-cartes" },
+    { label: "Jeux de cartes", slug: "jeux-de-cartes-a-collectionner" },
     { label: "Jeux pour enfants", slug: "jeux-enfants" },
   ],
 

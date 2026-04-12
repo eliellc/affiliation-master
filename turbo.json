@@ -1,9 +1,21 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "DATABASE_URL",
+    "DIRECT_URL",
+    "MEILISEARCH_HOST",
+    "MEILISEARCH_API_KEY",
+    "NEXT_PUBLIC_SITE_DOMAIN",
+    "REVALIDATE_SECRET",
+    "REVALIDATE_BASE_URL",
+    "SITE_DOMAIN",
+    "UPSTASH_REDIS_REST_URL",
+    "UPSTASH_REDIS_REST_TOKEN"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**", "node_modules/.prisma/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "dev": {
       "cache": false,

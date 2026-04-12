@@ -12,7 +12,9 @@
     "db:migrate:deploy": "dotenv -c -- pnpm --filter @affiliate/db exec prisma migrate deploy",
     "db:up": "docker compose up -d",
     "db:down": "docker compose down",
-    "pipeline": "dotenv -c -- pnpm --filter @affiliate/pipeline run pipeline"
+    "pipeline": "dotenv -c -- pnpm --filter @affiliate/pipeline run pipeline",
+    "data:lepiondor-products": "node scripts/build-lepiondor-products.mjs",
+    "data:lepiondor-products:1k": "node scripts/build-lepiondor-products.mjs --limit 1000"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

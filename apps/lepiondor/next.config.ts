@@ -34,6 +34,15 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/categorie/jeux-de-cartes",
+        destination: "/categorie/jeux-de-cartes-a-collectionner",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
@@ -55,6 +64,10 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "m.media-amazon.com" },
       { protocol: "https", hostname: "cdn.example.com" },
       { protocol: "https", hostname: "picsum.photos" },
+      { protocol: "https", hostname: "cdn1.philibertnet.com" },
+      { protocol: "https", hostname: "cdn2.philibertnet.com" },
+      { protocol: "https", hostname: "cdn3.philibertnet.com" },
+      { protocol: "https", hostname: "cdn4.philibertnet.com" },
     ],
   },
   async headers() {

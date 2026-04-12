@@ -107,12 +107,18 @@ export async function getChildCategories(siteId: string, pathPrefix: string) {
   });
 }
 
-export async function listCategoriesForSite(siteId: string) {
-  return prisma.category.findMany({
-    where: { siteId },
-    select: { path: true, name: true },
-    orderBy: { path: "asc" },
-  });
+export function listCategoriesForSite(siteId: string) {
+  return unstable_cache(
+    async () => {
+      return prisma.category.findMany({
+        where: { siteId },
+        select: { path: true, name: true },
+        orderBy: { path: "asc" },
+      });
+    },
+    ["list-categories", siteId],
+    { revalidate: 3600 }
+  )();
 }
 
 export async function countProductsForSitemap(siteId: string, inStockOnly: boolean) {
