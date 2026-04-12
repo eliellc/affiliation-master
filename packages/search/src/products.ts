@@ -4,6 +4,8 @@ export type ProductSearchDoc = {
   id: string;
   siteId: string;
   slug: string;
+  /** Premier segment du chemin catégorie (URL publique `/{univers}/{slug}`). */
+  univers: string;
   title: string;
   description: string | null;
   brand: string | null;
@@ -45,11 +47,17 @@ export async function ensureProductIndexSettings() {
   });
 }
 
+function universFromCategoryPaths(paths: string[]): string {
+  const first = paths[0];
+  return first?.split("/").filter(Boolean)[0] ?? "";
+}
+
 function toDoc(p: ProductLikeForIndex): ProductSearchDoc {
   return {
     id: p.id,
     siteId: p.siteId,
     slug: p.slug,
+    univers: universFromCategoryPaths(p.categoryPaths),
     title: p.title,
     description: p.description,
     brand: p.brand,
@@ -83,7 +91,7 @@ export async function searchProducts(siteId: string, query: string, limit = 20) 
   const index = client.index(PRODUCTS_INDEX);
   return index.search(query, {
     filter: `siteId = "${siteId}"`,
-    attributesToRetrieve: ["slug", "title", "price", "images", "rating"],
+    attributesToRetrieve: ["slug", "univers", "title", "price", "images", "rating"],
     limit,
   });
 }

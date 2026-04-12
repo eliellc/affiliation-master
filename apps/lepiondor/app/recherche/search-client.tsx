@@ -3,7 +3,13 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-type Hit = { slug: string; title: string; price?: number; rating?: number };
+type Hit = {
+  slug: string;
+  univers?: string;
+  title: string;
+  price?: number;
+  rating?: number;
+};
 
 export function SearchClient() {
   const [q, setQ] = useState("");
@@ -43,7 +49,10 @@ export function SearchClient() {
       <ul style={{ listStyle: "none", padding: 0, marginTop: 24 }}>
         {hits.map((h) => (
           <li key={h.slug} style={{ marginBottom: 12 }}>
-            <Link href={`/produit/${h.slug}`} style={{ fontWeight: 600 }}>
+            <Link
+              href={h.univers ? `/${h.univers}/${h.slug}` : `/produit/${h.slug}`}
+              style={{ fontWeight: 600 }}
+            >
               {h.title}
             </Link>
             {h.price != null ? <span style={{ marginLeft: 8 }}>{h.price.toFixed(2)} €</span> : null}

@@ -14,7 +14,8 @@
     "db:down": "docker compose down",
     "pipeline": "dotenv -c -- pnpm --filter @affiliate/pipeline run pipeline",
     "data:lepiondor-products": "node scripts/build-lepiondor-products.mjs",
-    "data:lepiondor-products:1k": "node scripts/build-lepiondor-products.mjs --limit 1000"
+    "data:lepiondor-products:1k": "node scripts/build-lepiondor-products.mjs --limit 1000",
+    "data:lepiondor:reseed": "pnpm data:lepiondor-products:1k && pnpm pipeline wipe --site lepiondor && pnpm pipeline import --site lepiondor --type products && pnpm pipeline index --site lepiondor"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

@@ -1,6 +1,7 @@
 import {
   countProductsForSitemap,
   listProductsSitemapChunk,
+  productPublicPath,
 } from "@affiliate/product-engine";
 import { renderUrlSet } from "@affiliate/seo";
 import { siteConfig } from "../../../config";
@@ -30,7 +31,7 @@ export async function GET(
   const domain = siteConfig.domain.replace(/\/$/, "");
   const xml = renderUrlSet(
     products.map((p) => ({
-      loc: `${domain}/produit/${p.slug}`,
+      loc: `${domain}${productPublicPath(p.slug, p.categories[0]?.category.path)}`,
       lastmod: p.updatedAt.toISOString(),
       changefreq: "weekly",
       priority: "0.8",

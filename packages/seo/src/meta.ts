@@ -15,7 +15,7 @@ export function generateProductMeta(product: ProductMetaInput, site: SiteConfig)
       type: "website",
     },
     alternates: {
-      canonical: `${site.domain}/produit/${product.slug}`,
+      canonical: `${site.domain}${product.canonicalPath ?? `/produit/${product.slug}`}`,
     },
   };
 }

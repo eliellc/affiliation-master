@@ -51,11 +51,29 @@ function parsePrice(raw) {
   return Number.isFinite(n) && n > 0 ? n : undefined;
 }
 
-function productSlug(raw) {
-  const ean = raw.ean != null ? String(raw.ean).trim() : "";
-  if (ean && /^[a-z0-9-]+$/i.test(ean)) return ean.toLowerCase();
-  const fromTitle = slugifySegment(raw.title || "produit");
-  return fromTitle || `p-${Math.random().toString(36).slice(2, 10)}`;
+/** Slug SEO depuis le titre ; unicité globale via `usedSlugs` (suffixe EAN ou compteur). */
+function productSlug(raw, usedSlugs) {
+  const base = slugifySegment(raw.title || "produit") || "produit";
+  const eanRaw = raw.ean != null ? String(raw.ean).trim() : "";
+  const eanSuffix = eanRaw.replace(/[^a-z0-9]/gi, "").toLowerCase();
+
+  let candidate = base;
+  if (!usedSlugs.has(candidate)) {
+    usedSlugs.add(candidate);
+    return candidate;
+  }
+  if (eanSuffix) {
+    candidate = `${base}-${eanSuffix}`;
+    if (!usedSlugs.has(candidate)) {
+      usedSlugs.add(candidate);
+      return candidate;
+    }
+  }
+  let n = 2;
+  while (usedSlugs.has(`${base}-${n}`)) n += 1;
+  candidate = `${base}-${n}`;
+  usedSlugs.add(candidate);
+  return candidate;
 }
 
 function truncate(str, max) {
@@ -65,7 +83,7 @@ function truncate(str, max) {
   return t.slice(0, max - 1).trimEnd() + "…";
 }
 
-function mapFiche(raw) {
+function mapFiche(raw, usedSlugs) {
   const images = Array.isArray(raw["product-images"])
     ? raw["product-images"].filter((u) => typeof u === "string" && /^https?:\/\//i.test(u))
     : [];
@@ -75,7 +93,7 @@ function mapFiche(raw) {
   const title = typeof raw.title === "string" ? raw.title.trim() : "";
   if (!title) throw new Error("title vide");
 
-  const slug = productSlug(raw);
+  const slug = productSlug(raw, usedSlugs);
   if (!/^[a-z0-9-]+$/.test(slug)) throw new Error(`slug invalide: ${slug}`);
 
   const categories = categoryPathsFromBreadcrumb(raw.breadcrumb);
@@ -135,6 +153,7 @@ async function main() {
   const jsonFiles = names.filter((n) => n.endsWith(".json")).sort((a, b) => a.localeCompare(b));
   const products = [];
   const errors = [];
+  const usedSlugs = new Set();
   let n = 0;
 
   for (const name of jsonFiles) {
@@ -144,7 +163,7 @@ async function main() {
     try {
       const buf = await readFile(join(INPUT_DIR, name), "utf-8");
       const raw = JSON.parse(buf);
-      products.push(mapFiche(raw));
+      products.push(mapFiche(raw, usedSlugs));
     } catch (e) {
       errors.push({ file: name, message: e instanceof Error ? e.message : String(e) });
     }

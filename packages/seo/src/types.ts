@@ -49,6 +49,8 @@ export type ProductMetaInput = {
   metaDesc: string | null;
   inStock: boolean;
   images: string[];
+  /** Chemin canonique sans domaine, ex. `/accessoires/de-vierge-bois-6cm`. */
+  canonicalPath?: string;
 };
 
 export type ArticleMetaInput = {

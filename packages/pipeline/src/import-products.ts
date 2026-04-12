@@ -6,6 +6,13 @@ import { productsJsonPath } from "./paths";
 import { syncProductsToIndex, type ProductLikeForIndex } from "@affiliate/search";
 import { triggerRevalidate } from "./revalidate";
 
+function productPathsToRevalidate(slug: string, primaryCategoryPath: string | undefined): string[] {
+  const root = primaryCategoryPath?.split("/").filter(Boolean)[0];
+  const out = [`/produit/${slug}`];
+  if (root) out.push(`/${root}/${slug}`);
+  return out;
+}
+
 export type ImportProductsResult = {
   inserted: number;
   updated: number;
@@ -186,15 +193,28 @@ export async function importProducts(
   }
 
   if (!options.skipRevalidate) {
-    const paths = ["/", "/sitemap.xml"];
+    const paths = new Set<string>(["/", "/sitemap.xml"]);
     if (obsoleteWhere && marked_obsolete > 0) {
-      const obsoleteSlugs = await prisma.product.findMany({
+      const obsoleteRows = await prisma.product.findMany({
         where: obsoleteWhere,
-        select: { slug: true },
+        select: {
+          slug: true,
+          categories: {
+            take: 1,
+            select: { category: { select: { path: true } } },
+          },
+        },
       });
-      paths.push(...obsoleteSlugs.map((r) => `/produit/${r.slug}`));
+      for (const r of obsoleteRows) {
+        for (const p of productPathsToRevalidate(
+          r.slug,
+          r.categories[0]?.category.path
+        )) {
+          paths.add(p);
+        }
+      }
     }
-    await triggerRevalidate(paths);
+    await triggerRevalidate([...paths]);
   }
 
   return { inserted, updated, errors, records, marked_obsolete };

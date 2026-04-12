@@ -11,6 +11,8 @@ export type ProductSchemaInput = {
   inStock: boolean;
   rating: number | null;
   reviewCount: number | null;
+  /** URL absolue ou chemin sous domaine du site pour l’offre. */
+  productUrl?: string;
 };
 
 export function productSchema(product: ProductSchemaInput, site: SiteConfig): object {
@@ -35,7 +37,7 @@ export function productSchema(product: ProductSchemaInput, site: SiteConfig): ob
       availability: product.inStock
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
-      url: `${site.domain}/produit/${product.slug}`,
+      url: product.productUrl ?? `${site.domain}/produit/${product.slug}`,
     },
     ...(product.rating != null
       ? {

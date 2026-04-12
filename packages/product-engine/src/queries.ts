@@ -31,6 +31,30 @@ export function getProduct(siteId: string, slug: string) {
   )();
 }
 
+/** Fiche produit pour URL `/{univers}/{slug}` (premier segment du path catégorie = univers). */
+export function getProductByRootAndSlug(siteId: string, univers: string, slug: string) {
+  return unstable_cache(
+    async () => {
+      return prisma.product.findFirst({
+        where: {
+          siteId,
+          slug,
+          categories: {
+            some: {
+              category: {
+                OR: [{ path: univers }, { path: { startsWith: `${univers}/` } }],
+              },
+            },
+          },
+        },
+        include: { categories: { include: { category: true } } },
+      });
+    },
+    ["product-root", siteId, univers, slug],
+    { revalidate: 86400 }
+  )();
+}
+
 export function getProductsByCategory(
   siteId: string,
   categoryPath: string,
@@ -135,7 +159,14 @@ export async function listProductsSitemapChunk(
 ) {
   return prisma.product.findMany({
     where: { siteId, ...(inStockOnly ? { inStock: true } : {}) },
-    select: { slug: true, updatedAt: true },
+    select: {
+      slug: true,
+      updatedAt: true,
+      categories: {
+        take: 1,
+        select: { category: { select: { path: true } } },
+      },
+    },
     orderBy: { updatedAt: "desc" },
     take,
     skip: (page - 1) * take,
@@ -157,6 +188,28 @@ export async function getTopProductSlugs(siteId: string, take: number) {
     select: { slug: true },
   });
   return rows.map((r) => r.slug);
+}
+
+/** Paramètres pour `generateStaticParams` des routes `/{univers}/{slug}`. */
+export async function getTopProductPublicParams(siteId: string, take: number) {
+  const rows = await prisma.product.findMany({
+    where: { siteId, inStock: true },
+    orderBy: { rating: "desc" },
+    take,
+    select: {
+      slug: true,
+      categories: {
+        take: 1,
+        select: { category: { select: { path: true } } },
+      },
+    },
+  });
+  const out: { univers: string; slug: string }[] = [];
+  for (const r of rows) {
+    const root = r.categories[0]?.category.path?.split("/").filter(Boolean)[0];
+    if (root) out.push({ univers: root, slug: r.slug });
+  }
+  return out;
 }
 
 export async function getTopComparatifSlugs(siteId: string, take: number) {

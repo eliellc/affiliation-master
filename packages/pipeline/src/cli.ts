@@ -7,6 +7,7 @@ import { reindexSiteProducts } from "./index-site";
 import { writeImportLog } from "./import-log";
 import { ProductsFileSchema, ArticlesFileSchema } from "./schemas";
 import { productsJsonPath, articlesJsonPath } from "./paths";
+import { wipeSiteCatalog } from "./wipe-catalog";
 
 function parseArgs(argv: string[]) {
   const args: Record<string, string | boolean> = {};
@@ -47,7 +48,7 @@ async function cmdValidate(site: string) {
 }
 
 function pickCommand(argv: string[]): string | undefined {
-  const known = new Set(["import", "validate", "index"]);
+  const known = new Set(["import", "validate", "index", "wipe"]);
   return argv.find((a) => known.has(a));
 }
 
@@ -61,7 +62,7 @@ async function main() {
   const argv = process.argv.slice(2);
   const cmd = pickCommand(argv);
   if (!cmd) {
-    throw new Error("Usage: pipeline <import|validate|index> [--site id] ...");
+    throw new Error("Usage: pipeline <import|validate|index|wipe> [--site id] ...");
   }
   const rest = argsAfterCommand(argv, cmd);
   const args = parseArgs(rest);
@@ -81,6 +82,16 @@ async function main() {
   if (cmd === "index") {
     const n = await reindexSiteProducts(prisma, site);
     console.log(`Indexed ${n} products for ${site}`);
+    return;
+  }
+
+  if (cmd === "wipe") {
+    if (dryRun) {
+      console.log(JSON.stringify({ site, wipe: "dry-run (no changes)" }, null, 2));
+      return;
+    }
+    await wipeSiteCatalog(prisma, site);
+    console.log(JSON.stringify({ site, wiped: true }, null, 2));
     return;
   }
 
