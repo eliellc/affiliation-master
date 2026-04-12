@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   buildBreadcrumb,
   getProductByRootAndSlug,
-  getTopProductPublicParams,
   listCategoriesForSite,
   productPublicPath,
 } from "@affiliate/product-engine";
@@ -21,15 +20,13 @@ import { siteId } from "../../../lib/site";
 
 export const revalidate = 86400;
 export const dynamicParams = true;
+/** Pas de SSG des 500 fiches au build : évite P2024 (pool Prisma) sur Vercel. Le cache reste via unstable_cache dans getProductByRootAndSlug. */
+export const dynamic = "force-dynamic";
 
 const domain = siteConfig.domain.replace(/\/$/, "");
 
 export async function generateStaticParams() {
-  try {
-    return await getTopProductPublicParams(siteId, 500);
-  } catch {
-    return [];
-  }
+  return [];
 }
 
 type Props = { params: Promise<{ univers: string; slug: string }> };

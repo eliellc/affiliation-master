@@ -7,8 +7,10 @@ import { siteId } from "../../../lib/site";
 
 export const revalidate = 86400;
 export const dynamicParams = true;
+/** Évite tout pré-rendu au build (sinon Prisma + pooler 1 connexion → P2024 sur Vercel). */
+export const dynamic = "force-dynamic";
 
-/** Ancienne URL canonique : redirection permanente vers `/{univers}/{slug}`. */
+/** Ancienne URL : redirection au runtime uniquement. */
 export async function generateStaticParams() {
   return [];
 }
