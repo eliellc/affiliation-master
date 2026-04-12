@@ -18,16 +18,11 @@ import {
 import { siteConfig } from "../../../config";
 import { siteId } from "../../../lib/site";
 
-export const revalidate = 86400;
 export const dynamicParams = true;
-/** Pas de SSG des 500 fiches au build : évite P2024 (pool Prisma) sur Vercel. Le cache reste via unstable_cache dans getProductByRootAndSlug. */
+/** Redondant avec `app/[univers]/layout.tsx` ; garde la route explicitement dynamique. */
 export const dynamic = "force-dynamic";
 
 const domain = siteConfig.domain.replace(/\/$/, "");
-
-export async function generateStaticParams() {
-  return [];
-}
 
 type Props = { params: Promise<{ univers: string; slug: string }> };
 
