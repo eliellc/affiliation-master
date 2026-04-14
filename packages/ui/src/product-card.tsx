@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { SiteConfig } from "@affiliate/seo";
 
 export type ProductCardProduct = {
@@ -9,6 +10,8 @@ export type ProductCardProduct = {
   currency: string;
   images: string[];
   rating: number | null;
+  /** Chemin canonique fiche produit, ex. `/jeux-de-societe/mon-jeu` ou `/produit/mon-jeu`. */
+  productHref?: string;
 };
 
 export function ProductCard(props: { product: ProductCardProduct; site: SiteConfig }) {
@@ -43,17 +46,22 @@ export function ProductCard(props: { product: ProductCardProduct; site: SiteConf
         </p>
       ) : null}
       {product.rating != null ? <p style={{ fontSize: 14 }}>★ {product.rating.toFixed(1)}</p> : null}
-      <p style={{ marginTop: 8 }}>
-        <a
-          href={`/api/go/${product.slug}`}
-          rel="nofollow sponsored"
-          target="_blank"
-          referrerPolicy="no-referrer-when-downgrade"
-          style={{ color: site.theme.primaryColor, fontWeight: 600 }}
-        >
-          Voir le prix
-        </a>
-      </p>
+      <Link
+        href={product.productHref ?? `/produit/${product.slug}`}
+        style={{
+          display: "inline-block",
+          marginTop: 12,
+          padding: "8px 14px",
+          borderRadius: 6,
+          background: site.theme.primaryColor,
+          color: site.theme.secondaryColor,
+          fontWeight: 600,
+          fontSize: 14,
+          textDecoration: "none",
+        }}
+      >
+        Voir le produit
+      </Link>
     </article>
   );
 }

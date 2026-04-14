@@ -80,6 +80,12 @@ export function getProductsByCategory(
           take: pageSize,
           skip: (page - 1) * pageSize,
           orderBy: productOrderBy(sort),
+          include: {
+            categories: {
+              take: 1,
+              include: { category: { select: { path: true } } },
+            },
+          },
         }),
         prisma.product.count({ where }),
       ]);
