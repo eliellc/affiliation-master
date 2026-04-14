@@ -14,7 +14,9 @@ export async function renderBlock(block: ContentBlock, siteId: string, site: Sit
         sort: block.sort === "price" || block.sort === "createdAt" ? block.sort : "rating",
         inStockOnly: true,
       });
-      const products = items.map((p) => toCardProduct(p));
+      const products = items.map((p) =>
+        toCardProduct(p, { preferredCategoryPath: block.category })
+      );
       return <ProductList products={products} site={site} />;
     }
     case "product_grid": {
@@ -23,7 +25,9 @@ export async function renderBlock(block: ContentBlock, siteId: string, site: Sit
         page: 1,
         inStockOnly: true,
       });
-      const products = items.map((p) => toCardProduct(p));
+      const products = items.map((p) =>
+        toCardProduct(p, { preferredCategoryPath: block.category })
+      );
       return <ProductList products={products} site={site} />;
     }
     case "comparison_table": {

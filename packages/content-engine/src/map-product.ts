@@ -10,8 +10,8 @@ export function toCardProduct(p: {
   images: string[];
   rating: number | null;
   categories?: { category: { path: string } }[];
-}): ProductCardProduct {
-  const primaryPath = p.categories?.[0]?.category.path;
+}, options?: { preferredCategoryPath?: string }): ProductCardProduct {
+  const primaryPath = options?.preferredCategoryPath ?? p.categories?.[0]?.category.path;
   return {
     slug: p.slug,
     title: p.title,

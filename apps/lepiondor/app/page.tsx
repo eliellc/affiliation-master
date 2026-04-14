@@ -16,7 +16,7 @@ export default async function HomePage() {
       page: 1,
       inStockOnly: true,
     });
-    products = items.map((p) => toCardProduct(p));
+    products = items.map((p) => toCardProduct(p, { preferredCategoryPath: firstNav?.slug }));
   } catch {
     products = [];
   }

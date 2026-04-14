@@ -120,7 +120,7 @@ export default async function CategoryPage(props: Props) {
   } catch {
     /* idem home / blog */
   }
-  const products = items.map((p) => toCardProduct(p));
+  const products = items.map((p) => toCardProduct(p, { preferredCategoryPath: path }));
 
   let allCats: Awaited<ReturnType<typeof listCategoriesForSite>> = [];
   try {
