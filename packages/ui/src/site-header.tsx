@@ -22,7 +22,7 @@ export function SiteHeader(props: { site: SiteConfig }) {
         {site.nav.map((item) => (
           <Link
             key={item.slug}
-            href={`/categorie/${item.slug}`}
+            href={`/${item.slug}`}
             style={{ color: site.theme.secondaryColor }}
           >
             {item.label}

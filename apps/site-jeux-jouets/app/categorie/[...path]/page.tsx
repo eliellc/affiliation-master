@@ -94,7 +94,7 @@ export default async function CategoryPage(props: Props) {
           {catRows.map((c) => (
             <span key={c.path}>
               {" "}
-              / <Link href={`/categorie/${c.path}`}>{c.name}</Link>
+              / <Link href={`/${c.path}`}>{c.name}</Link>
             </span>
           ))}
         </nav>
@@ -138,7 +138,7 @@ export default async function CategoryPage(props: Props) {
   });
 
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
-  const canonicalPath = `/categorie/${path}`;
+  const canonicalPath = `/${path}`;
 
   return (
     <div>
@@ -155,7 +155,7 @@ export default async function CategoryPage(props: Props) {
         {catRows.map((c) => (
           <span key={c.path}>
             {" "}
-            / <Link href={`/categorie/${c.path}`}>{c.name}</Link>
+            / <Link href={`/${c.path}`}>{c.name}</Link>
           </span>
         ))}
       </nav>

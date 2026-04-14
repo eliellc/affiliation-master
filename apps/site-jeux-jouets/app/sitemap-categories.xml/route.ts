@@ -10,7 +10,7 @@ export async function GET() {
   const domain = siteConfig.domain.replace(/\/$/, "");
   const xml = renderUrlSet(
     cats.map((c) => ({
-      loc: `${domain}/categorie/${c.path}`,
+      loc: `${domain}/${c.path}`,
       changefreq: "weekly",
       priority: "0.6",
     }))

@@ -29,7 +29,7 @@ export default async function HomePage() {
       <ProductList products={products} site={siteConfig} />
       {firstNav ? (
         <p style={{ marginTop: 16 }}>
-          <Link href={`/categorie/${firstNav.slug}`}>Voir la catégorie « {firstNav.label} »</Link>
+          <Link href={`/${firstNav.slug}`}>Voir la catégorie « {firstNav.label} »</Link>
         </p>
       ) : null}
     </div>

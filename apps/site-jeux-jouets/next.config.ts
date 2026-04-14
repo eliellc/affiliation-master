@@ -37,6 +37,16 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
+        source:
+          "/:path((?!api|_next|blog|comparatif|produit|recherche|categorie|robots\\.txt|sitemap\\.xml|sitemap-categories\\.xml|sitemap-articles\\.xml|sitemap-products|favicon\\.ico).+)",
+        destination: "/categorie/:path",
+      },
+      {
+        source:
+          "/:path1((?!api|_next|blog|comparatif|produit|recherche|categorie|robots\\.txt|sitemap\\.xml|sitemap-categories\\.xml|sitemap-articles\\.xml|sitemap-products|favicon\\.ico)[^/]+)/:path2*",
+        destination: "/categorie/:path1/:path2*",
+      },
+      {
         source: "/sitemap-products-:chunk.xml",
         destination: "/sitemap-products/:chunk",
       },
