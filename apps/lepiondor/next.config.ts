@@ -81,6 +81,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "cdn2.philibertnet.com" },
       { protocol: "https", hostname: "cdn3.philibertnet.com" },
       { protocol: "https", hostname: "cdn4.philibertnet.com" },
+      { protocol: "https", hostname: "www.ludifolie.com" },
+      { protocol: "https", hostname: "ludifolie.com" },
     ],
   },
   async headers() {
