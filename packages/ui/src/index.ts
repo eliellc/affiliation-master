@@ -1,3 +1,4 @@
+export * from "./remote-product-image";
 export * from "./product-card";
 export * from "./product-list";
 export * from "./comparison-table";

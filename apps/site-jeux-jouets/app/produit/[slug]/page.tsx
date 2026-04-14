@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import type { Metadata } from "next";
+import { RemoteProductImage } from "@affiliate/ui";
 import Link from "next/link";
 import {
   buildBreadcrumb,
@@ -104,7 +104,7 @@ export default async function ProductPage(props: Props) {
 
       <h1 style={{ color: siteConfig.theme.secondaryColor }}>{product.title}</h1>
       {primary ? (
-        <Image
+        <RemoteProductImage
           src={primary}
           alt={product.title}
           width={640}

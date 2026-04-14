@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { SiteConfig } from "@affiliate/seo";
+import { RemoteProductImage } from "./remote-product-image";
 
 export type ProductCardProduct = {
   slug: string;
@@ -27,13 +27,12 @@ export function ProductCard(props: { product: ProductCardProduct; site: SiteConf
       }}
     >
       {img ? (
-        <Image
+        <RemoteProductImage
           src={img}
           alt={product.title}
           width={280}
           height={280}
           style={{ objectFit: "cover", borderRadius: 4, width: "100%", height: "auto" }}
-          priority={false}
         />
       ) : null}
       <h3 style={{ margin: "8px 0 4px", color: site.theme.secondaryColor }}>{product.title}</h3>
