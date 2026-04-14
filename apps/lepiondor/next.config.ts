@@ -31,6 +31,14 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   outputFileTracingRoot: repoRoot,
+  outputFileTracingIncludes: {
+    "/*": [
+      "../../node_modules/.prisma/client/**/*",
+      "../../node_modules/.pnpm/@prisma+client@*/node_modules/.prisma/client/**/*",
+      "../../node_modules/.pnpm/@prisma+client@*/node_modules/@prisma/client/**/*",
+    ],
+  },
+  serverExternalPackages: ["@prisma/client", "prisma"],
   eslint: {
     ignoreDuringBuilds: true,
   },
