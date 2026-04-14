@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ArticleMetaInput, CategoryMetaInput, ProductMetaInput, SiteConfig } from "./types";
+import { categoryListPublicPath } from "./public-paths";
 
 export function generateProductMeta(product: ProductMetaInput, site: SiteConfig): Metadata {
   return {
@@ -26,7 +27,7 @@ export function generateCategoryMeta(category: CategoryMetaInput, site: SiteConf
     description: category.metaDesc ?? category.description ?? undefined,
     robots: category.description ? "index, follow" : "noindex, follow",
     alternates: {
-      canonical: `${site.domain}/categorie/${category.path}`,
+      canonical: `${site.domain}${categoryListPublicPath(category.path)}`,
     },
   };
 }
@@ -35,7 +36,7 @@ export function generateCategoryFilteredMeta(site: SiteConfig, categoryPath: str
   return {
     robots: "noindex, follow",
     alternates: {
-      canonical: `${site.domain}/categorie/${categoryPath}`,
+      canonical: `${site.domain}${categoryListPublicPath(categoryPath)}`,
     },
   };
 }

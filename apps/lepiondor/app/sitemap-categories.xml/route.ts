@@ -1,5 +1,5 @@
 import { listCategoriesForSite } from "@affiliate/product-engine";
-import { renderUrlSet } from "@affiliate/seo";
+import { categoryListPublicPath, renderUrlSet } from "@affiliate/seo";
 import { siteConfig } from "../../config";
 import { siteId } from "../../lib/site";
 
@@ -10,7 +10,7 @@ export async function GET() {
   const domain = siteConfig.domain.replace(/\/$/, "");
   const xml = renderUrlSet(
     cats.map((c) => ({
-      loc: `${domain}/${c.path}`,
+      loc: `${domain}${categoryListPublicPath(c.path)}`,
       changefreq: "weekly",
       priority: "0.6",
     }))

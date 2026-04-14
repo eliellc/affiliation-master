@@ -11,6 +11,7 @@ import {
 import { markdownToHtml } from "@affiliate/content-engine";
 import {
   breadcrumbSchema,
+  categoryListPublicPath,
   generateProductMeta,
   JsonLd,
   productSchema,
@@ -92,7 +93,7 @@ export default async function ProductPageNested(props: Props) {
             {catRows.map((c) => (
               <span key={c.path}>
                 {" "}
-                / <Link href={`/${c.path}`}>{c.name}</Link>
+                / <Link href={categoryListPublicPath(c.path)}>{c.name}</Link>
               </span>
             ))}
           </nav>

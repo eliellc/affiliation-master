@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getProductsByCategory } from "@affiliate/product-engine";
 import { ProductList, type ProductCardProduct } from "@affiliate/ui";
 import { toCardProduct } from "@affiliate/content-engine";
+import { categoryListPublicPath } from "@affiliate/seo";
 import { siteConfig } from "../config";
 import { siteId } from "../lib/site";
 
@@ -29,7 +30,7 @@ export default async function HomePage() {
       <ProductList products={products} site={siteConfig} />
       {firstNav ? (
         <p style={{ marginTop: 16 }}>
-          <Link href={`/${firstNav.slug}`}>Voir la catégorie « {firstNav.label} »</Link>
+          <Link href={categoryListPublicPath(firstNav.slug)}>Voir la catégorie « {firstNav.label} »</Link>
         </p>
       ) : null}
     </div>

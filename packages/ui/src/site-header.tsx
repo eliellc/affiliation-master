@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { SiteConfig } from "@affiliate/seo";
+import { categoryListPublicPath } from "@affiliate/seo";
 
 export function SiteHeader(props: { site: SiteConfig }) {
   const { site } = props;
@@ -22,7 +23,7 @@ export function SiteHeader(props: { site: SiteConfig }) {
         {site.nav.map((item) => (
           <Link
             key={item.slug}
-            href={`/${item.slug}`}
+            href={categoryListPublicPath(item.slug)}
             style={{ color: site.theme.secondaryColor }}
           >
             {item.label}

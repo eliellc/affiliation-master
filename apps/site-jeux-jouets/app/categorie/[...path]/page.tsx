@@ -10,6 +10,7 @@ import {
 import { ProductList } from "@affiliate/ui";
 import { toCardProduct } from "@affiliate/content-engine";
 import {
+  categoryListPublicPath,
   categoryPageMetadata,
   JsonLd,
   PaginationLinks,
@@ -94,7 +95,7 @@ export default async function CategoryPage(props: Props) {
           {catRows.map((c) => (
             <span key={c.path}>
               {" "}
-              / <Link href={`/${c.path}`}>{c.name}</Link>
+              / <Link href={categoryListPublicPath(c.path)}>{c.name}</Link>
             </span>
           ))}
         </nav>
@@ -138,7 +139,7 @@ export default async function CategoryPage(props: Props) {
   });
 
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
-  const canonicalPath = `/${path}`;
+  const canonicalPath = categoryListPublicPath(path);
 
   return (
     <div>
@@ -155,7 +156,7 @@ export default async function CategoryPage(props: Props) {
         {catRows.map((c) => (
           <span key={c.path}>
             {" "}
-            / <Link href={`/${c.path}`}>{c.name}</Link>
+            / <Link href={categoryListPublicPath(c.path)}>{c.name}</Link>
           </span>
         ))}
       </nav>

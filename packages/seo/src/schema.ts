@@ -1,4 +1,5 @@
 import type { SiteConfig } from "./types";
+import { categoryListPublicPath } from "./public-paths";
 
 export type ProductSchemaInput = {
   slug: string;
@@ -73,7 +74,7 @@ export function breadcrumbSchema(path: string, site: SiteConfig, categories: Cat
           "@type": "ListItem",
           position: i + 2,
           name: cat?.name ?? seg,
-          item: `${site.domain}/categorie/${seg}`,
+          item: `${site.domain}${categoryListPublicPath(seg)}`,
         };
       }),
     ],
