@@ -55,7 +55,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source:
-          "/:path((?!api|_next|blog|comparatif|produit|recherche|categorie|robots\\.txt|sitemap\\.xml|sitemap-categories\\.xml|sitemap-articles\\.xml|sitemap-products|favicon\\.ico).+)",
+          "/:path((?!api|_next|blog|comparatif|produit|recherche|categorie|robots\\.txt|sitemap\\.xml|sitemap-categories\\.xml|sitemap-articles\\.xml|sitemap-products|favicon\\.ico)[^/]+)",
         destination: "/categorie/:path",
       },
       {
