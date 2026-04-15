@@ -19,7 +19,7 @@ export const siteConfig: SiteConfig = {
     network: "amazon",
     tag: "lepiondor-21",
     disclaimer:
-      "En tant que partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.",
+      "Le Pion d'Or, passionné de jeux depuis toujours.",
   },
 
   // Slugs = chemins racine réels dans les catégories importées (products.json → ensureCategoryPaths).
