@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { readFile } from "node:fs/promises";
+import nodePath from "node:path";
 import {
   buildBreadcrumb,
   getCategoryByPath,
@@ -24,6 +26,35 @@ import styles from "./category-page.module.css";
 export const revalidate = 3600;
 
 const FILTER_KEYS = ["brand", "price", "rating", "sort"];
+const CATEGORY_DESCRIPTIONS_FILE = nodePath.join(
+  process.cwd(),
+  "INPUT-DATA-ELIE",
+  "lepiondor",
+  "categories-lepiondor.json"
+);
+
+type CategoryDescriptionRow = {
+  slug: string;
+  description: string;
+};
+
+function normalizeCategoryPath(value: string): string {
+  return value.replace(/^\/+|\/+$/g, "");
+}
+
+let categoryDescriptionsMapPromise: Promise<Map<string, string>> | null = null;
+
+function getCategoryDescriptionsMap(): Promise<Map<string, string>> {
+  if (!categoryDescriptionsMapPromise) {
+    categoryDescriptionsMapPromise = readFile(CATEGORY_DESCRIPTIONS_FILE, "utf-8")
+      .then((raw) => {
+        const rows = JSON.parse(raw) as CategoryDescriptionRow[];
+        return new Map(rows.map((row) => [normalizeCategoryPath(row.slug), row.description]));
+      })
+      .catch(() => new Map<string, string>());
+  }
+  return categoryDescriptionsMapPromise;
+}
 
 function titleFromCategoryPath(categoryPath: string): string {
   const leaf = categoryPath.split("/").filter(Boolean).pop() ?? categoryPath;
@@ -49,11 +80,14 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     if (!category) {
       return { title: "Catégorie" };
     }
+    const customDescription =
+      (await getCategoryDescriptionsMap()).get(normalizeCategoryPath(category.path)) ??
+      category.description;
     return categoryPageMetadata(
       siteConfig,
       category.path,
       category.name,
-      category.description,
+      customDescription,
       category.metaTitle,
       category.metaDesc,
       hasFilters
@@ -160,6 +194,8 @@ export default async function CategoryPage(props: Props) {
 
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
   const canonicalPath = categoryListPublicPath(path);
+  const customDescription =
+    (await getCategoryDescriptionsMap()).get(normalizeCategoryPath(path)) ?? category!.description;
 
   return (
     <div className={styles.page}>
@@ -189,7 +225,7 @@ export default async function CategoryPage(props: Props) {
           <p className={styles.eyebrow}>Comparatif et avis 2026</p>
           <h1 className={styles.title}>{category!.name}</h1>
           <p className={styles.description}>
-            {category!.description ??
+            {customDescription ??
               `Découvrez notre sélection ${category!.name} avec une analyse orientée rapport qualité-prix, style et confort.`}
           </p>
           <div className={styles.heroMeta}>
