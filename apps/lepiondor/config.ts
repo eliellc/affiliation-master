@@ -8,34 +8,20 @@ export const siteConfig: SiteConfig = {
   language: "fr",
 
   theme: {
-    primaryColor: "#b8860b",
-    secondaryColor: "#1a3d2e",
+    primaryColor: "#000000",
+    secondaryColor: "#ffffff",
     font: "Inter",
     logo: "/logo.svg",
     favicon: "/logo.svg",
   },
 
-  affiliate: {
-    network: "amazon",
-    tag: "lepiondor-21",
-    disclaimer:
-      "Le Pion d'Or, passionné de jeux depuis toujours.",
-  },
-
-  // Slugs = chemins racine réels dans les catégories importées (products.json → ensureCategoryPaths).
-  // « jeux-de-cartes » seul n’existe pas en base ; l’arborescence catalogue utilise jeux-de-cartes-a-collectionner.
-  nav: [
-    { label: "Jeux de société", slug: "jeux-de-societe" },
-    { label: "Jeux de cartes", slug: "jeux-de-cartes-a-collectionner" },
-    { label: "Jeux pour enfants", slug: "jeux-enfants" },
-  ],
+  nav: [],
 
   seo: {
     siteName: "Le Pion d'Or",
-    defaultTitle: "Le Pion d'Or — Jeux de société et sélections",
-    defaultDescription:
-      "Conseils, comparatifs et idées cadeaux autour des jeux de société et des jeux de cartes.",
-    twitterHandle: "@lepiondor",
+    defaultTitle: "Le Pion d'Or",
+    defaultDescription: "",
+    twitterHandle: "",
   },
 
   features: {
