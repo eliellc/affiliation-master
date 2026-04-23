@@ -30,6 +30,7 @@ export type ProductPageTemplateProps = {
   specs?: SpecGroup[];
   verdict?: Verdict;
   faq?: FaqItem[];
+  faqTitle?: string;
   disclaimer?: string;
 };
 
@@ -64,7 +65,8 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
     specs = [],
     verdict,
     faq = [],
-    disclaimer = "Cette page contient des liens d'affiliation.",
+    faqTitle = "FAQ",
+    disclaimer = "",
   } = props;
 
   const safeImages = useMemo(() => images.filter(Boolean), [images]);
@@ -255,7 +257,7 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
 
         {faq.length > 0 ? (
           <section className={styles.faq}>
-            <h2 className={styles.faqTitle}>FAQ</h2>
+            <h2 className={styles.faqTitle}>{faqTitle}</h2>
             {faq.map((item, idx) => {
               const open = openFaq === idx;
               return (

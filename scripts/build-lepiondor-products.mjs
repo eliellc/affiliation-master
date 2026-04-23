@@ -154,6 +154,7 @@ function mapFiche(raw, usedSlugs) {
     in_stock: true,
     brand: brand || undefined,
     ean: raw.ean != null ? String(raw.ean).trim() : undefined,
+    editorial: raw,
     categories,
     meta_title: truncate(raw.meta_title, 70),
     meta_desc: truncate(raw.meta_description, 160),
