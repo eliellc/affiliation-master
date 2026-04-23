@@ -25,6 +25,7 @@ model Product {
   reviewCount    Int?     @map("review_count")
   brand          String?
   ean            String?
+  editorial      Json?
   metaTitle      String?  @map("meta_title")
   metaDesc       String?  @map("meta_desc")
   createdAt      DateTime @default(now()) @map("created_at")

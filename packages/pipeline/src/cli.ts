@@ -73,6 +73,13 @@ async function main() {
   }
 
   const dryRun = args["dry-run"] === true;
+  const skipSearch = args["skip-search"] === true;
+  const skipRevalidate = args["skip-revalidate"] === true;
+  const source = args.source === "fiches" || args.source === "json" ? args.source : undefined;
+  const limit =
+    typeof args.limit === "string" && Number.isFinite(Number.parseInt(args.limit, 10))
+      ? Number.parseInt(args.limit, 10)
+      : undefined;
 
   if (cmd === "validate") {
     await cmdValidate(site);
@@ -113,8 +120,10 @@ async function main() {
   if (type === "products" || type === "all") {
     const r = await importProducts(prisma, site, {
       dryRun,
-      skipSearch: dryRun,
-      skipRevalidate: dryRun,
+      skipSearch: dryRun || skipSearch,
+      skipRevalidate: dryRun || skipRevalidate,
+      source,
+      limit,
     });
     inserted += r.inserted;
     updated += r.updated;

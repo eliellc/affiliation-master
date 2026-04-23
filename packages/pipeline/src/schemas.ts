@@ -15,6 +15,7 @@ export const ProductSchema = z.object({
   review_count: z.number().int().min(0).optional(),
   brand: z.string().optional(),
   ean: z.string().optional(),
+  editorial: z.record(z.string(), z.unknown()).optional(),
   categories: z.array(z.string()).min(1),
   meta_title: z.string().max(70).optional(),
   meta_desc: z.string().max(160).optional(),

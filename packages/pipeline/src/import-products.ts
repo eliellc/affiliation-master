@@ -5,6 +5,7 @@ import { ensureCategoryPaths, resolveCategoryIdsByPaths } from "./categories";
 import { productsJsonPath } from "./paths";
 import { syncProductsToIndex, type ProductLikeForIndex } from "@affiliate/search";
 import { triggerRevalidate } from "./revalidate";
+import { importProductsFromLepiondorFiches } from "./import-products-fiches";
 
 function productPathsToRevalidate(slug: string, primaryCategoryPath: string | undefined): string[] {
   const root = primaryCategoryPath?.split("/").filter(Boolean)[0];
@@ -55,8 +56,23 @@ function toIndexDoc(row: {
 export async function importProducts(
   prisma: PrismaClient,
   siteId: string,
-  options: { dryRun?: boolean; skipSearch?: boolean; skipRevalidate?: boolean } = {}
+  options: {
+    dryRun?: boolean;
+    skipSearch?: boolean;
+    skipRevalidate?: boolean;
+    source?: "json" | "fiches";
+    limit?: number;
+  } = {}
 ): Promise<ImportProductsResult> {
+  if (options.source === "fiches" || (siteId === "lepiondor" && options.source !== "json")) {
+    return importProductsFromLepiondorFiches(prisma, siteId, {
+      dryRun: options.dryRun,
+      skipSearch: options.skipSearch,
+      skipRevalidate: options.skipRevalidate,
+      limit: options.limit,
+    });
+  }
+
   const raw = await readFile(productsJsonPath(siteId), "utf-8");
   const parsed = ProductsFileSchema.parse(JSON.parse(raw));
   if (parsed.site !== siteId) {
@@ -120,6 +136,7 @@ export async function importProducts(
         reviewCount: data.review_count ?? null,
         brand: data.brand ?? null,
         ean: data.ean ?? null,
+        editorial: data.editorial ?? null,
         metaTitle: data.meta_title ?? null,
         metaDesc: data.meta_desc ?? null,
       },
@@ -137,6 +154,7 @@ export async function importProducts(
         reviewCount: data.review_count ?? null,
         brand: data.brand ?? null,
         ean: data.ean ?? null,
+        editorial: data.editorial ?? null,
         metaTitle: data.meta_title ?? null,
         metaDesc: data.meta_desc ?? null,
       },
