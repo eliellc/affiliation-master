@@ -15,12 +15,6 @@ export const siteConfig: SiteConfig = {
     favicon: "/logo.svg",
   },
 
-  affiliate: {
-    network: "amazon",
-    tag: "monsite-jeux-21",
-    disclaimer:
-      "En tant que partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.",
-  },
 
   nav: [
     { label: "Jeux de société", slug: "jeux-de-societe" },

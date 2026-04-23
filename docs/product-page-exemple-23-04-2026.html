@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molten Lava Bases Round 32mm (x8) — Gamers Grass | Le Pion d'Or</title>
+<meta name="description" content="8 socles ronds Battle Ready illustrant des paysages chaotiques, compatibles aimants 6mm. Finition manuelle pour vos figurines de wargame.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --forest:     #1B4D3A;
+  --forest-dk:  #143829;
+  --forest-md:  #2D7A57;
+  --forest-lt:  #EAF4EE;
+  --forest-100: #C2DDD3;
+  --ink:        #111A16;
+  --ink-600:    #3A4D42;
+  --ink-400:    #6E8078;
+  --ink-200:    #BDD0C7;
+  --ink-100:    #DCE8E2;
+  --ink-50:     #F0F5F2;
+  --page:       #F4F5F0;
+  --card:       #FFFFFF;
+  --red:        #E03232;
+  --red-lt:     #FDEAEA;
+  --serif: 'Crimson Pro', Georgia, serif;
+  --sans:  'DM Sans', system-ui, sans-serif;
+  --radius: 14px;
+  --radius-sm: 8px;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); font-size: 15px; line-height: 1.6; color: var(--ink); background: var(--page); -webkit-font-smoothing: antialiased; }
+a { color: var(--forest); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { display: block; max-width: 100%; }
+
+.top-banner { background: var(--forest-dk); text-align: center; padding: 0.5rem 1rem; font-size: 13px; font-style: italic; color: rgba(255,255,255,0.7); }
+
+.site-header { background: var(--card); border-bottom: 1px solid var(--ink-100); padding: 1rem 0; }
+.site-header .w { max-width: 1160px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-family: var(--serif); font-size: 26px; font-weight: 600; color: var(--ink); letter-spacing: -0.02em; line-height: 1; }
+.logo em { color: var(--forest); font-style: normal; }
+.nav { display: flex; gap: 2rem; list-style: none; }
+.nav a { font-size: 14px; font-weight: 500; color: var(--ink-600); }
+.nav a:hover { color: var(--ink); text-decoration: none; }
+
+.bc-bar { background: var(--card); border-bottom: 1px solid var(--ink-100); padding: 0.8rem 0; }
+.bc-bar .w { max-width: 1160px; margin: 0 auto; padding: 0 1.5rem; }
+.bc { display: flex; flex-wrap: wrap; gap: 0; list-style: none; font-size: 13px; color: var(--ink-400); align-items: center; }
+.bc li { display: flex; align-items: center; }
+.bc li + li::before { content: '›'; margin: 0 0.4rem; color: var(--ink-200); }
+.bc a { color: var(--ink-400); }
+.bc a:hover { color: var(--forest); }
+.bc li:last-child { color: var(--ink-600); font-weight: 500; }
+
+.page { max-width: 1160px; margin: 0 auto; padding: 2rem 1.5rem 5rem; }
+
+/* Hero two-column */
+.hero { display: grid; grid-template-columns: 1fr 500px; gap: 2rem; align-items: start; }
+
+/* Gallery */
+.gal { display: flex; flex-direction: column; gap: 0.75rem; }
+.gal-main { background: var(--card); border-radius: var(--radius); border: 1px solid var(--ink-100); overflow: hidden; aspect-ratio: 4/3; }
+.gal-main img { width: 100%; height: 100%; object-fit: contain; padding: 1.5rem; transition: transform 0.3s; }
+.gal-main:hover img { transform: scale(1.03); }
+.gal-thumbs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; }
+.gal-thumb { aspect-ratio: 1; background: var(--card); border: 2px solid var(--ink-100); border-radius: var(--radius-sm); overflow: hidden; cursor: pointer; transition: border-color 0.15s; }
+.gal-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.gal-thumb:hover { border-color: var(--forest-100); }
+.gal-thumb.on { border-color: var(--forest); }
+.gal-caption { font-size: 12px; color: var(--ink-400); text-align: center; padding-top: 0.1rem; }
+
+/* Info card */
+.info { background: var(--card); border-radius: var(--radius); border: 1px solid var(--ink-100); padding: 1.75rem; display: flex; flex-direction: column; gap: 1.4rem; }
+
+.badge { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--ink); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; padding: 5px 12px; border-radius: 4px; width: fit-content; }
+.badge-star { color: #F5C842; }
+
+.product-title { font-family: var(--serif); font-size: 30px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; color: var(--ink); margin-top: 0.6rem; }
+.product-brand { font-size: 14px; color: var(--ink-400); margin-top: 0.4rem; }
+.product-brand strong { color: var(--forest); font-weight: 600; }
+
+/* PSC block */
+.psc { background: var(--forest-lt); border: 1px solid var(--forest-100); border-radius: var(--radius-sm); padding: 1.2rem 1.5rem; display: flex; align-items: center; gap: 1.2rem; }
+.psc-price { font-family: var(--serif); font-size: 46px; font-weight: 400; color: var(--ink); line-height: 1; letter-spacing: -0.02em; flex-shrink: 0; }
+.psc-price sup { font-size: 20px; vertical-align: super; letter-spacing: 0; }
+.psc-sep { width: 1px; height: 50px; background: var(--forest-100); flex-shrink: 0; }
+.psc-score { flex-shrink: 0; text-align: center; }
+.psc-score-lbl { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--ink-400); margin-bottom: 0.15rem; }
+.psc-score-val { font-family: var(--serif); font-size: 30px; font-weight: 600; color: var(--ink); line-height: 1; }
+.psc-cta { flex: 1; display: flex; justify-content: flex-end; }
+.btn { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--forest); color: #fff; font-family: var(--sans); font-size: 15px; font-weight: 600; padding: 1rem 1.6rem; border-radius: var(--radius-sm); text-decoration: none; white-space: nowrap; transition: background 0.15s; }
+.btn:hover { background: var(--forest-dk); color: #fff; text-decoration: none; }
+.btn-arr { font-size: 17px; font-weight: 300; }
+
+/* Criteria grid */
+.crit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; }
+.crit-card { background: var(--card); border: 1px solid var(--ink-100); border-radius: var(--radius-sm); padding: 0.9rem 1rem; }
+.crit-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.55rem; }
+.crit-lbl { font-size: 13.5px; font-weight: 500; color: var(--ink); }
+.crit-score { font-size: 13.5px; font-weight: 700; color: var(--ink); }
+.crit-score em { font-style: normal; font-weight: 400; color: var(--ink-400); font-size: 12px; }
+.crit-track { height: 5px; background: var(--ink-100); border-radius: 99px; overflow: hidden; }
+.crit-fill { height: 100%; background: var(--forest); border-radius: 99px; }
+
+.disclaimer { font-size: 11.5px; color: var(--ink-400); line-height: 1.5; text-align: center; }
+
+/* Below hero */
+.stack { margin-top: 1.75rem; display: flex; flex-direction: column; gap: 1.25rem; }
+
+/* Avis 30s */
+.avis { background: var(--card); border-radius: var(--radius); border: 1px solid var(--ink-100); border-left: 4px solid var(--forest); padding: 1.75rem 2rem; }
+.avis-lbl { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; color: var(--ink-400); margin-bottom: 0.85rem; display: flex; align-items: center; gap: 0.5rem; }
+.avis-qq { font-family: Georgia, serif; font-size: 30px; color: var(--ink-200); line-height: 0.6; display: inline-block; margin-right: 0.2rem; }
+.avis-text { font-family: var(--serif); font-size: 18px; line-height: 1.65; color: var(--ink); }
+
+/* Pros / Cons */
+.pc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.pc { background: var(--card); border-radius: var(--radius); border: 1px solid var(--ink-100); padding: 1.5rem; }
+.pc-hd { display: flex; align-items: center; gap: 0.5rem; font-size: 12px; letter-spacing: 0.08em; font-weight: 700; text-transform: uppercase; margin-bottom: 1.1rem; }
+.pc-hd-icon { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+.pc-hd.green .pc-hd-icon { background: var(--forest-md); }
+.pc-hd.red   .pc-hd-icon { background: var(--red); }
+.pc-hd.green { color: var(--forest); }
+.pc-hd.red   { color: var(--red); }
+.pc-list { list-style: none; display: flex; flex-direction: column; }
+.pc-item { display: flex; align-items: flex-start; gap: 0.7rem; padding: 0.65rem 0; border-bottom: 1px solid var(--ink-50); font-size: 14px; line-height: 1.45; color: var(--ink); }
+.pc-item:last-child { border-bottom: none; padding-bottom: 0; }
+.pc-ic { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 11px; flex-shrink: 0; margin-top: 1px; }
+.pc-ic.green { background: var(--forest-md); }
+.pc-ic.red   { background: var(--red); }
+
+/* Editorial */
+.ed { background: var(--card); border-radius: var(--radius); border: 1px solid var(--ink-100); padding: 2rem 2.25rem; }
+.ed h2 { font-family: var(--serif); font-size: 23px; font-weight: 600; color: var(--ink); margin: 1.75rem 0 0.6rem; letter-spacing: -0.01em; line-height: 1.25; }
+.ed h2:first-child { margin-top: 0; }
+.ed h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--ink); margin: 1.4rem 0 0.5rem; }
+.ed p { font-size: 15.5px; line-height: 1.75; color: var(--ink-600); margin-bottom: 0.4rem; }
+
+/* Specs */
+.spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.spec-card { background: var(--card); border-radius: var(--radius); border: 1px solid var(--ink-100); padding: 1.5rem; }
+.spec-hd { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-400); margin-bottom: 1.1rem; display: flex; align-items: center; gap: 0.45rem; }
+.spec-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.6rem 0; border-bottom: 1px dotted var(--ink-100); gap: 1rem; }
+.spec-row:last-child { border-bottom: none; padding-bottom: 0; }
+.spec-lbl { font-size: 13.5px; color: var(--ink-400); }
+.spec-val { font-size: 13.5px; font-weight: 700; color: var(--ink); text-align: right; }
+
+/* Verdict */
+.verdict { background: var(--forest-dk); border-radius: var(--radius); border-left: 5px solid var(--forest-md); padding: 2.25rem 2.5rem; }
+.verdict-ey { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; color: var(--forest-100); margin-bottom: 0.5rem; }
+.verdict-sc { font-family: var(--serif); font-size: 60px; font-weight: 600; color: #fff; line-height: 1; letter-spacing: -0.02em; }
+.verdict-sc em { font-style: normal; font-size: 26px; color: rgba(255,255,255,0.3); }
+.verdict-txt { font-family: var(--serif); font-size: 17px; line-height: 1.65; color: rgba(255,255,255,0.65); max-width: 600px; margin: 1rem 0 1.4rem; }
+.vp-list { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+.vp { display: flex; align-items: center; gap: 0.4rem; font-size: 13px; font-weight: 500; padding: 0.4rem 0.9rem; border-radius: 4px; }
+.vp.ex { background: rgba(45,122,87,0.25); color: #A8D9BE; border: 1px solid rgba(45,122,87,0.4); }
+.vp.ok { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.45); border: 1px solid rgba(255,255,255,0.12); }
+.vp-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.7; }
+
+/* FAQ */
+.faq { background: var(--card); border-radius: var(--radius); border: 1px solid var(--ink-100); padding: 2rem 2.25rem; }
+.faq-title { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 1.2rem; letter-spacing: -0.01em; }
+.faq-item { border-top: 1px solid var(--ink-100); cursor: pointer; }
+.faq-q { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; padding: 1.1rem 0; font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--ink); user-select: none; }
+.faq-tog { width: 24px; height: 24px; border-radius: 50%; background: var(--ink-50); border: 1px solid var(--ink-100); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--ink-400); font-size: 16px; transition: background 0.15s, border-color 0.15s; }
+.faq-item.on .faq-tog { background: var(--forest-lt); border-color: var(--forest-100); color: var(--forest); }
+.faq-a { display: none; font-size: 14.5px; line-height: 1.7; color: var(--ink-600); padding-bottom: 1.1rem; max-width: 680px; }
+.faq-item.on .faq-a { display: block; }
+
+footer { border-top: 1px solid var(--ink-100); background: var(--card); padding: 1.5rem 0; }
+footer .w { max-width: 1160px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--ink-400); }
+
+@media (max-width: 900px) {
+  .hero, .pc-grid, .spec-grid, .crit-grid { grid-template-columns: 1fr; }
+  .nav { display: none; }
+  .psc { flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<div class="top-banner">L'inspiration qui s'invite dans votre hobby.</div>
+
+<header class="site-header">
+  <div class="w">
+    <div class="logo">Le Pion <em>d'Or</em></div>
+    <ul class="nav">
+      <li><a href="#">Meilleurs jeux ▾</a></li>
+      <li><a href="#">Par Marque ▾</a></li>
+      <li><a href="#">Par Type ▾</a></li>
+      <li><a href="#">Par Prix ▾</a></li>
+    </ul>
+  </div>
+</header>
+
+<nav class="bc-bar">
+  <div class="w">
+    <ol class="bc">
+      <li><a href="/jeux-de-figurines/">Jeux de figurines</a></li>
+      <li><a href="/jeux-de-figurines/peinture-et-modelisme/">Peinture et Modélisme</a></li>
+      <li><a href="/jeux-de-figurines/peinture-et-modelisme/modelisme/">Modélisme</a></li>
+      <li><a href="/jeux-de-figurines/peinture-et-modelisme/modelisme/soclage/">Soclage</a></li>
+      <li><a href="/jeux-de-figurines/peinture-et-modelisme/modelisme/soclage/socles/">Socles</a></li>
+      <li><a href="/jeux-de-figurines/peinture-et-modelisme/modelisme/soclage/socles/socles-pre-peints/">Socles Pré-peints</a></li>
+      <li>Molten Lava</li>
+    </ol>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="hero">
+    <!-- Gallery -->
+    <div class="gal">
+      <div class="gal-main">
+        <img id="main-img" src="https://cdn1.philibertnet.com/820639/molten-lava-bases-round-32mm-x8.jpg" alt="Molten Lava Bases Round 32mm">
+      </div>
+      <div class="gal-thumbs">
+        <div class="gal-thumb on" onclick="setImg(this,'https://cdn1.philibertnet.com/820639/molten-lava-bases-round-32mm-x8.jpg')"><img src="https://cdn1.philibertnet.com/820639/molten-lava-bases-round-32mm-x8.jpg" alt=""></div>
+        <div class="gal-thumb" onclick="setImg(this,'https://cdn2.philibertnet.com/820639/molten-lava-bases-round-32mm-x8.jpg')"><img src="https://cdn2.philibertnet.com/820639/molten-lava-bases-round-32mm-x8.jpg" alt=""></div>
+        <div class="gal-thumb" onclick="setImg(this,'https://cdn2.philibertnet.com/820640/molten-lava-bases-round-32mm-x8.jpg')"><img src="https://cdn2.philibertnet.com/820640/molten-lava-bases-round-32mm-x8.jpg" alt=""></div>
+        <div class="gal-thumb" onclick="setImg(this,'https://cdn2.philibertnet.com/820641/molten-lava-bases-round-32mm-x8.jpg')"><img src="https://cdn2.philibertnet.com/820641/molten-lava-bases-round-32mm-x8.jpg" alt=""></div>
+        <div class="gal-thumb" onclick="setImg(this,'https://cdn2.philibertnet.com/820642/molten-lava-bases-round-32mm-x8.jpg')"><img src="https://cdn2.philibertnet.com/820642/molten-lava-bases-round-32mm-x8.jpg" alt=""></div>
+      </div>
+      <p class="gal-caption">Retrouvez plus de photos sur le site marchand</p>
+    </div>
+
+    <!-- Info card -->
+    <div class="info">
+      <div>
+        <div class="badge"><span class="badge-star">★</span> TEST &amp; AVIS</div>
+        <h1 class="product-title">Molten Lava Bases, Round 32mm (×8)</h1>
+        <p class="product-brand">Par <strong>Gamers Grass</strong></p>
+      </div>
+
+      <div class="psc">
+        <div class="psc-price">15,95<sup>€</sup></div>
+        <div class="psc-sep"></div>
+        <div class="psc-score">
+          <div class="psc-score-lbl">Note globale</div>
+          <div class="psc-score-val">7.8</div>
+        </div>
+        <div class="psc-cta">
+          <a href="https://www.philibertnet.com/fr/molten-lava/168709-molten-lava-bases-round-32mm-x8-738956791894.html" target="_blank" rel="nofollow sponsored" class="btn">
+            Voir l'offre <span class="btn-arr">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="crit-grid">
+        <div class="crit-card">
+          <div class="crit-top"><span class="crit-lbl">Finition prête</span><span class="crit-score">9<em>/10</em></span></div>
+          <div class="crit-track"><div class="crit-fill" style="width:90%"></div></div>
+        </div>
+        <div class="crit-card">
+          <div class="crit-top"><span class="crit-lbl">Compatibilité</span><span class="crit-score">8.5<em>/10</em></span></div>
+          <div class="crit-track"><div class="crit-fill" style="width:85%"></div></div>
+        </div>
+        <div class="crit-card">
+          <div class="crit-top"><span class="crit-lbl">Complétude kit</span><span class="crit-score">6.5<em>/10</em></span></div>
+          <div class="crit-track"><div class="crit-fill" style="width:65%"></div></div>
+        </div>
+        <div class="crit-card">
+          <div class="crit-top"><span class="crit-lbl">Thématique</span><span class="crit-score">7<em>/10</em></span></div>
+          <div class="crit-track"><div class="crit-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stack">
+
+    <div class="avis">
+      <div class="avis-lbl"><span class="avis-qq">"</span>Notre avis en 30 secondes</div>
+      <p class="avis-text">Les socles Molten Lava Bases de Gamers Grass offrent huit socles ronds de 32&nbsp;mm aux finitions manuelles de paysages infernaux. Ils sont compatibles avec des aimants pour une fixation discrète. Idéaux pour les joueurs de wargame souhaitant enrichir rapidement leurs armées, ils nécessitent cependant l'achat séparé des aimants.</p>
+    </div>
+
+    <div class="pc-grid">
+      <div class="pc">
+        <div class="pc-hd green"><div class="pc-hd-icon">✓</div>Points forts</div>
+        <ul class="pc-list">
+          <li class="pc-item"><div class="pc-ic green">✓</div>Finition manuelle Battle Ready — socles prêts à l'emploi sans peinture supplémentaire.</li>
+          <li class="pc-item"><div class="pc-ic green">✓</div>Compatibilité magnétique intégrée — découpe pour aimants 6&nbsp;mm permettant une fixation discrète et solide.</li>
+          <li class="pc-item"><div class="pc-ic green">✓</div>Thématique cohérente — huit socles au style infernal pour unifier visuellement une armée.</li>
+          <li class="pc-item"><div class="pc-ic green">✓</div>Fabrication européenne — produits conçus et réalisés au Portugal.</li>
+        </ul>
+      </div>
+      <div class="pc">
+        <div class="pc-hd red"><div class="pc-hd-icon">✕</div>Points faibles</div>
+        <ul class="pc-list">
+          <li class="pc-item"><div class="pc-ic red">✕</div>Aimants non inclus — nécessite un achat complémentaire pour la fixation des figurines.</li>
+          <li class="pc-item"><div class="pc-ic red">✕</div>Variabilité des finitions — les produits peuvent différer légèrement des modèles photographiés.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ed">
+      <h2>Des bases thématiques pour un wargame immersif</h2>
+      <p>Les socles Molten Lava Bases apportent une dimension narrative immédiate à vos figurines. Chaque socle de 32&nbsp;mm de diamètre représente un paysage infernal ou chaotique, créant une unité visuelle pour une armée entière ou marquant des unités spéciales. Le fait qu'ils soient déjà peints à la main élimine une étape chronophage du hobby.</p>
+      <h2>Comment intégrer ces socles à vos figurines</h2>
+      <p>L'utilisation est technique mais accessible. La découpe inférieure de chaque socle est conçue pour accueillir un aimant néodyme d'un diamètre maximal de 6&nbsp;mm et d'une épaisseur de 1&nbsp;mm. Cette compatibilité permet de fixer solidement et de manière réversible vos figurines, une pratique courante pour le transport ou le rangement. Les aimants ne sont pas inclus dans le set.</p>
+      <h3>Pour les joueurs recherchant rapidité et cohérence</h3>
+      <p>Ces socles Battle Ready sont particulièrement adaptés aux joueurs qui participent à des tournois ou qui souhaitent mettre en jeu une armée complète sans passer des semaines à peindre les bases. La thématique lave et chaos prédéfinie garantit une homogénéité parfaite entre toutes les unités.</p>
+      <h2>Ce qui distingue ce set de Gamers Grass</h2>
+      <p>Au-delà de la finition pré-appliquée, la valeur ajoutée réside dans la fabrication portugaise et le statut d'accessoire de modélisme. La variabilité possible entre les socles reçus et les photos est courante dans ce secteur où chaque pièce est finie manuellement, ajoutant un caractère unique à chaque exemplaire.</p>
+    </div>
+
+    <div class="spec-grid">
+      <div class="spec-card">
+        <div class="spec-hd">⊞ Contenu &amp; Dimensions</div>
+        <div class="spec-row"><span class="spec-lbl">Quantité</span><span class="spec-val">8 socles</span></div>
+        <div class="spec-row"><span class="spec-lbl">Format</span><span class="spec-val">Ronds</span></div>
+        <div class="spec-row"><span class="spec-lbl">Diamètre</span><span class="spec-val">32 mm</span></div>
+        <div class="spec-row"><span class="spec-lbl">État de finition</span><span class="spec-val">Prépeints à la main</span></div>
+        <div class="spec-row"><span class="spec-lbl">Compatibilité aimants</span><span class="spec-val">Ø max 6 mm, ép. max 1 mm</span></div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-hd">⊙ Fabrication &amp; Sécurité</div>
+        <div class="spec-row"><span class="spec-lbl">Marque</span><span class="spec-val">Gamers Grass</span></div>
+        <div class="spec-row"><span class="spec-lbl">Pays de fabrication</span><span class="spec-val">Portugal</span></div>
+        <div class="spec-row"><span class="spec-lbl">Catégorie</span><span class="spec-val">Peinture/Modélisme — Socles</span></div>
+        <div class="spec-row"><span class="spec-lbl">Avertissement</span><span class="spec-val">Ne convient pas aux −3 ans. Petits éléments.</span></div>
+      </div>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-ey">Notre verdict</div>
+      <div class="verdict-sc">7.8<em>/10</em></div>
+      <p class="verdict-txt">Ces socles représentent un gain de temps notable pour un joueur régulier. Leur limite principale tient à leur nature d'accessoire complémentaire, nécessitant l'achat d'aimants et s'intégrant dans un projet de modélisme plus large.</p>
+      <div class="vp-list">
+        <div class="vp ex"><div class="vp-dot"></div>Joueurs de tournoi</div>
+        <div class="vp ex"><div class="vp-dot"></div>Hobbyistes pressés</div>
+        <div class="vp ok"><div class="vp-dot"></div>Débutants en modélisme</div>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2 class="faq-title">Socles Molten Lava Bases : guide d'intégration pour vos figurines</h2>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Que contient exactement le set Molten Lava Bases ?<div class="faq-tog">+</div></div>
+        <div class="faq-a">Le set contient huit socles ronds d'un diamètre de 32 millimètres. Chaque socle est prépeint à la main avec des motifs représentant des paysages infernaux ou chaotiques, et est considéré comme « Battle Ready », c'est-à-dire prêt à être utilisé directement sur table de jeu.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Comment fixer une figurine sur ces socles ?<div class="faq-tog">+</div></div>
+        <div class="faq-a">Les socles sont conçus pour être utilisés avec des aimants. Une découpe est prévue sous chaque base pour y loger un aimant néodyme d'un diamètre maximal de 6&nbsp;mm et d'une épaisseur maximale de 1&nbsp;mm. Vous devrez coller l'aimant dans cette cavité, et un second aimant ou une plaque métallique sous la figurine. Les aimants ne sont pas fournis.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Ces socles sont-ils adaptés aux enfants ?<div class="faq-tog">+</div></div>
+        <div class="faq-a">Non, ce produit est un accessoire de modélisme et de peinture pour jeux de figurines. La fiche technique indique qu'il ne convient pas aux enfants de moins de 3 ans en raison de la présence de petits éléments, ce qui correspond au public adulte et adolescent pratiquant le wargame.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Puis-je utiliser ces bases pour n'importe quel jeu de figurines ?<div class="faq-tog">+</div></div>
+        <div class="faq-a">Ces socles de 32&nbsp;mm sont un format standard très répandu dans de nombreux jeux de wargame (comme Warhammer Age of Sigmar, entre autres). Leur compatibilité dépend principalement du diamètre de la base d'origine de votre figurine. La thématique lave et chaos les destine plus spécifiquement à des armées démoniaques, orques, ou à tout univers fantasy/sci-fi sombre.</div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="w">
+    <span>Le Pion d'Or — Liens affiliés · politique de transparence</span>
+    <span>© 2026 lepiondor.fr</span>
+  </div>
+</footer>
+
+<script>
+function setImg(t, src) {
+  document.getElementById('main-img').src = src;
+  document.querySelectorAll('.gal-thumb').forEach(x => x.classList.remove('on'));
+  t.classList.add('on');
+}
+function toggleFaq(item) {
+  const open = item.classList.contains('on');
+  document.querySelectorAll('.faq-item.on').forEach(i => {
+    i.classList.remove('on');
+    i.querySelector('.faq-tog').textContent = '+';
+  });
+  if (!open) {
+    item.classList.add('on');
+    item.querySelector('.faq-tog').textContent = '−';
+  }
+}
+</script>
+</body>
+</html>

@@ -15,6 +15,7 @@
     "pipeline": "dotenv -c -- pnpm --filter @affiliate/pipeline run pipeline",
     "data:lepiondor-products": "node scripts/build-lepiondor-products.mjs",
     "data:lepiondor-products:1k": "node scripts/build-lepiondor-products.mjs --limit 1000",
+    "data:lepiondor-top-expensive": "node scripts/build-lepiondor-top-expensive-products.mjs",
     "data:lepiondor:reseed": "pnpm data:lepiondor-products:1k && pnpm pipeline wipe --site lepiondor && pnpm pipeline import --site lepiondor --type products && pnpm pipeline index --site lepiondor"
   },
   "devDependencies": {
@@ -31,5 +32,8 @@
   "packageManager": "pnpm@9.15.4",
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "slugify": "^1.6.9"
   }
 }

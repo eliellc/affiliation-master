@@ -182,11 +182,6 @@ export const siteConfig = {
     favicon: "/favicon.ico",
   },
 
-  affiliate: {
-    network: "amazon",
-    tag: "monsite-jeux-21",
-    disclaimer: "En tant que partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.",
-  },
 
   nav: [
     { label: "Jeux de société", slug: "jeux-de-societe" },
@@ -1023,9 +1018,21 @@ module.exports = {
 };
 ```
 
-**Option B — CDN propre via BunnyCDN ou Cloudflare (recommandé à grande échelle)**
+**Option B — Stockage centralisé Cloudflare R2 (méthode retenue)**
 
-Les images sont servies depuis `cdn.tonsite.com`. Protège des rate limits et des URLs expirées des CDN affilieurs.
+Les images sont enregistrées dans un bucket **R2** (ex: `lepiondor-images`) puis servies via un domaine CDN (custom domain R2 ou domaine proxifié Cloudflare). Cette méthode protège des rate limits et des URLs expirées des plateformes d'affiliation.
+
+Variables d'environnement requises :
+
+```bash
+R2_ACCESS_KEY_ID="..."
+R2_SECRET_ACCESS_KEY="..."
+R2_ACCOUNT_ID="..."
+R2_S3_ENDPOINT="https://<account_id>.r2.cloudflarestorage.com"
+R2_BUCKET_NAME="lepiondor-images"
+```
+
+Règle projet : toute nouvelle image produit ou éditoriale doit être uploadée dans R2 et les champs `images` / `image_url` doivent pointer vers l'URL publique R2/CDN.
 
 ---
 
@@ -1309,7 +1316,7 @@ Tests unitaires avec **Vitest**. Couverture minimale obligatoire sur :
 | Validation | Zod | Validation des JSON entrants |
 | Recherche | Meilisearch (Railway) | Index global filtré par siteId |
 | Markdown | remark + rehype + sanitize-html | Rendu et sanitisation |
-| CDN images | BunnyCDN / Cloudflare | Proxy indépendant des affilieurs |
+| CDN images | Cloudflare R2 | Stockage centralisé + diffusion CDN |
 | Déploiement | Vercel | ISR natif, CDN global |
 | Rate limiting | Upstash | Protection endpoints |
 | CI/CD | GitHub Actions | Builds, imports, migrations |

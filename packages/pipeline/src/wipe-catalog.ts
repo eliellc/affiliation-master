@@ -1,5 +1,6 @@
 import type { PrismaClient } from "@prisma/client";
 import { deleteSiteProductsFromIndex } from "@affiliate/search";
+import { triggerRevalidate } from "./revalidate";
 
 /**
  * Supprime tous les produits du site (cascade : product_categories, affiliate_clicks),
@@ -32,4 +33,6 @@ export async function wipeSiteCatalog(prisma: PrismaClient, siteId: string): Pro
   });
   const catDel = await prisma.category.deleteMany({ where: { siteId } });
   console.log(`[wipe] categories deleted: ${catDel.count}`);
+
+  await triggerRevalidate(["/"]);
 }
