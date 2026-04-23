@@ -21,13 +21,15 @@ export function ProductCard(props: { product: ProductCardProduct; site: SiteConf
   return (
     <article className={styles.card}>
       {img ? (
-        <RemoteProductImage
-          src={img}
-          alt={product.title}
-          width={280}
-          height={280}
-          style={{ objectFit: "cover", borderRadius: 8, width: "100%", height: "auto" }}
-        />
+        <div className={styles.media}>
+          <RemoteProductImage
+            src={img}
+            alt={product.title}
+            width={280}
+            height={280}
+            style={{ objectFit: "contain", width: "100%", height: "100%" }}
+          />
+        </div>
       ) : null}
       <h3 className={styles.title}>{product.title}</h3>
       {product.description ? <p className={styles.description}>{product.description}</p> : null}

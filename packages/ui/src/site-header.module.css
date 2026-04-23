@@ -1,0 +1,87 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--color-neutral-200);
+  background: var(--color-surface);
+}
+
+.inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.brandMark {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--color-neutral-200);
+  background: var(--color-surface);
+}
+
+.brandName {
+  color: var(--color-neutral-900);
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  color: var(--color-neutral-700);
+  font-size: 12px;
+  margin: 0;
+}
+
+.navRow {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.navLink {
+  color: var(--color-neutral-800);
+  text-decoration: none;
+  padding: 0.45rem 0.72rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-neutral-200);
+  background: var(--color-neutral-50);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+@media (min-width: 760px) {
+  .inner {
+    padding: 0.9rem 1.5rem;
+  }
+
+  .brandName {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .inner {
+    padding: 1rem 1.75rem;
+  }
+}

@@ -94,7 +94,8 @@ export default async function CategoryPage(props: Props) {
     const displayName = catRows.at(-1)?.name ?? titleFromCategoryPath(path);
     return (
       <div className={styles.page}>
-        <div className={styles.stack}>
+        <JsonLd data={breadcrumbSchema(path, siteConfig, catRows)} />
+        <div className={styles.heroStack}>
           <nav className={styles.bcBar} aria-label="Fil d'ariane">
             <ol className={styles.bc}>
               <li>
@@ -107,19 +108,23 @@ export default async function CategoryPage(props: Props) {
               ))}
             </ol>
           </nav>
-        <JsonLd data={breadcrumbSchema(path, siteConfig, catRows)} />
-          <section className={styles.intro}>
+          <section className={styles.hero}>
+            <p className={styles.eyebrow}>Comparatif et avis 2026</p>
             <h1 className={styles.title}>{displayName}</h1>
             <p className={styles.warning}>
-              Le catalogue ne peut pas être chargé (erreur de connexion à la base ou configuration).
-              Vérifiez sur Vercel que <code>DATABASE_URL</code> pointe vers le pooler Supabase (port 6543)
-              avec <code>pgbouncer=true</code> et <code>connection_limit=1</code>, puis consultez les
-              journaux de déploiement (recherche <code>[lepiondor:db:</code>) pour le message d’erreur
-              exact.
+              Le catalogue ne peut pas être chargé (erreur de connexion à la base ou configuration). Vérifiez
+              sur Vercel que <code>DATABASE_URL</code> pointe vers le pooler Supabase (port 6543) avec{" "}
+              <code>pgbouncer=true</code> et <code>connection_limit=1</code>, puis consultez les journaux de
+              déploiement (recherche <code>[lepiondor:db:</code>) pour le message d’erreur exact.
             </p>
           </section>
         </div>
-        <ProductList products={[]} site={siteConfig} />
+        <section className={styles.resultsSection}>
+          <div className={styles.resultsHead}>
+            <h2 className={styles.resultsTitle}>Sélection indisponible</h2>
+          </div>
+          <ProductList products={[]} site={siteConfig} />
+        </section>
       </div>
     );
   }
@@ -166,7 +171,8 @@ export default async function CategoryPage(props: Props) {
           !hasFilters && page < totalPages ? `${canonicalPath}?page=${page + 1}` : undefined
         }
       />
-      <div className={styles.stack}>
+      <JsonLd data={breadcrumbSchema(path, siteConfig, catRows)} />
+      <div className={styles.heroStack}>
         <nav className={styles.bcBar} aria-label="Fil d'ariane">
           <ol className={styles.bc}>
             <li>
@@ -179,25 +185,100 @@ export default async function CategoryPage(props: Props) {
             ))}
           </ol>
         </nav>
-      <JsonLd data={breadcrumbSchema(path, siteConfig, catRows)} />
-        <section className={styles.intro}>
+        <section className={styles.hero}>
+          <p className={styles.eyebrow}>Comparatif et avis 2026</p>
           <h1 className={styles.title}>{category!.name}</h1>
-          {category!.description ? <p className={styles.description}>{category!.description}</p> : null}
+          <p className={styles.description}>
+            {category!.description ??
+              `Découvrez notre sélection ${category!.name} avec une analyse orientée rapport qualité-prix, style et confort.`}
+          </p>
+          <div className={styles.heroMeta}>
+            <span>{total} modèles analysés</span>
+            <span>Mis à jour aujourd'hui</span>
+            <span>Prix observés en ligne</span>
+          </div>
         </section>
       </div>
-      <ProductList products={products} site={siteConfig} />
+
+      <section className={styles.toolsWrap} aria-label="Filtres visuels">
+        <div className={styles.toolGroup}>
+          <span className={styles.toolLabel}>Prix</span>
+          <button type="button" className={styles.chip}>
+            0€ - 500€
+          </button>
+          <button type="button" className={styles.chip}>
+            500€ - 1200€
+          </button>
+          <button type="button" className={styles.chip}>
+            1200€+
+          </button>
+        </div>
+        <div className={styles.toolGroup}>
+          <span className={styles.toolLabel}>Style</span>
+          <button type="button" className={styles.chip}>
+            Design
+          </button>
+          <button type="button" className={styles.chip}>
+            Scandinave
+          </button>
+          <button type="button" className={styles.chip}>
+            Contemporain
+          </button>
+        </div>
+        <label className={styles.selectWrap}>
+          Trier
+          <select className={styles.select}>
+            <option>Pertinence</option>
+            <option>Prix croissant</option>
+            <option>Prix decroissant</option>
+          </select>
+        </label>
+      </section>
+
+      <section className={styles.resultsSection}>
+        <div className={styles.resultsHead}>
+          <h2 className={styles.resultsTitle}>Nos tests {category!.name}</h2>
+          <p className={styles.resultsCount}>
+            Page {page} sur {totalPages}
+          </p>
+        </div>
+        <ProductList products={products} site={siteConfig} />
+      </section>
+
       <div className={styles.pagination}>
-        {page > 1 ? (
-          <Link className={styles.pagerLink} href={`${canonicalPath}?page=${page - 1}`}>
-            Page précédente
-          </Link>
-        ) : null}
-        {page < totalPages ? (
-          <Link className={styles.pagerLink} href={`${canonicalPath}?page=${page + 1}`}>
-            Page suivante
-          </Link>
-        ) : null}
+        <p className={styles.paginationMeta}>Navigation des resultats</p>
+        <div className={styles.paginationLinks}>
+          {page > 1 ? (
+            <Link className={styles.pagerLink} href={`${canonicalPath}?page=${page - 1}`}>
+              Page precedente
+            </Link>
+          ) : null}
+          {page < totalPages ? (
+            <Link className={styles.pagerLink} href={`${canonicalPath}?page=${page + 1}`}>
+              Page suivante
+            </Link>
+          ) : null}
+        </div>
       </div>
+
+      <section className={styles.editorialGrid}>
+        <article className={styles.editorialCard}>
+          <p className={styles.editorialEyebrow}>Pourquoi choisir</p>
+          <h2 className={styles.editorialTitle}>Notre analyse des {category!.name}</h2>
+          <p className={styles.editorialText}>
+            Nous comparons les modeles selon la qualite de fabrication, le confort sur la duree, les retours
+            clients et le positionnement tarifaire pour vous aider a choisir rapidement.
+          </p>
+        </article>
+        <article className={styles.editorialCard}>
+          <p className={styles.editorialEyebrow}>Methodologie</p>
+          <h2 className={styles.editorialTitle}>Comment nous notons chaque modele</h2>
+          <p className={styles.editorialText}>
+            Chaque fiche produit est normalisee pour isoler les points forts, les limites et la cible d'usage
+            ideale. Le score final met l'accent sur l'equilibre entre style, fiabilite et prix.
+          </p>
+        </article>
+      </section>
     </div>
   );
 }
