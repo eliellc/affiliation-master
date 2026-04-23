@@ -83,7 +83,6 @@ function splitProsConsItem(item: string) {
 export function ProductPageTemplate(props: ProductPageTemplateProps) {
   const {
     title,
-    brand,
     description,
     price,
     currency,
@@ -91,7 +90,7 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
     priceCheckedAt,
     images,
     ctaHref,
-    ctaLabel = "Voir la meilleure offre",
+    ctaLabel = "Voir l'offre",
     breadcrumb = [],
     richContentHtml,
     shortReview,
@@ -170,11 +169,6 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
               <span className={styles.badgeStar}>★</span> TEST & AVIS
             </div>
             <h1 className={styles.productTitle}>{title}</h1>
-            {brand ? (
-              <p className={styles.productBrand}>
-                Marque <strong>{brand}</strong>
-              </p>
-            ) : null}
             {(trustSignals?.authorName || trustSignals?.updatedAt) && (
               <p className={styles.productMeta}>
                 {trustSignals?.authorName ? `Par ${trustSignals.authorName}` : null}
@@ -252,18 +246,9 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
       </div>
 
       <div className={styles.stack}>
-        {(trustSignals?.editorialBadge || trustSignals?.comparedCount != null) && (
-          <section className={styles.trust}>
-            {trustSignals?.editorialBadge ? <div className={styles.trustBadge}>{trustSignals.editorialBadge}</div> : null}
-            {trustSignals?.comparedCount != null ? (
-              <p className={styles.trustText}>Parmi {trustSignals.comparedCount} produits analyses dans cette categorie.</p>
-            ) : null}
-          </section>
-        )}
-
         {shortReview ? (
           <section className={styles.avis}>
-            <div className={styles.avisLbl}>Lecture rapide</div>
+            <div className={styles.avisLbl}>Notre avis en 30 secondes</div>
             <p className={styles.avisText}>{shortReview}</p>
           </section>
         ) : null}

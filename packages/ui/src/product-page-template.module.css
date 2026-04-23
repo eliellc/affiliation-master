@@ -143,16 +143,6 @@
   margin: 0.1rem 0 0;
 }
 
-.productBrand {
-  font-size: 14px;
-  color: var(--color-neutral-600);
-  margin: 0;
-}
-
-.productBrand strong {
-  color: var(--color-primary);
-}
-
 .productMeta {
   font-size: 12px;
   color: var(--color-neutral-600);

@@ -152,7 +152,7 @@ export default async function ProductPageNested(props: Props) {
         rating={product.rating}
         images={product.images}
         ctaHref={`/api/go/${product.slug}`}
-        ctaLabel="Voir la meilleure offre"
+        ctaLabel="Voir l'offre"
         breadcrumb={catRows.map((c) => ({ label: c.name, href: categoryListPublicPath(c.path) }))}
         richContentHtml={html}
         shortReview={
