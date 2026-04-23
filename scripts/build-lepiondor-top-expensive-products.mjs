@@ -14,7 +14,7 @@ const repoRoot = join(__dirname, "..");
 const INPUT_DIR = join(repoRoot, "INPUT-DATA-ELIE", "lepiondor", "data-fiches-produits");
 const OUTPUT_DIR = join(repoRoot, "data", "lepiondor");
 const OUTPUT_FILE = join(OUTPUT_DIR, "top-expensive-products.json");
-const TARGET_COUNT = 800;
+const TARGET_COUNT = 1000;
 
 function parsePrice(raw) {
   if (raw == null) return undefined;

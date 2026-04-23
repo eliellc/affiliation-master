@@ -1,11 +1,11 @@
 {
   "site": "lepiondor",
   "type": "top_expensive_products",
-  "generated_at": "2026-04-23T13:26:06.665Z",
+  "generated_at": "2026-04-23T15:56:53.006Z",
   "selection": {
-    "target": 800,
+    "target": 1000,
     "include_ties": true,
-    "threshold_price": 149.95
+    "threshold_price": 137.95
   },
   "stats": {
     "total_files": 64667,
@@ -14,7 +14,7 @@
     "excluded_invalid_breadcrumb": 55,
     "excluded_invalid_slug": 0,
     "excluded_parse_error": 0,
-    "selected": 802
+    "selected": 1000
   },
   "preview_urls": [
     "/jeux-de-cartes-a-collectionner/lot-de-12-boites-de-24-boosters-les-vaillants-fracasseurs-yu-gi-oh-fr",
@@ -7246,6 +7246,1788 @@
       "breadcrumb_level1": "/jeux-de-role/",
       "final_url": "/jeux-de-role/worlds-at-a-glance-towns-and-villages-box-set",
       "source_file": "9789083438658-article.json"
+    },
+    {
+      "ean": "0820650559495",
+      "title": "Pokemon - Coffret Ultra Premium - Amphinobi Ex",
+      "slug": "pokemon-coffret-ultra-premium-amphinobi-ex",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/pokemon-coffret-ultra-premium-amphinobi-ex",
+      "source_file": "0820650559495-article.json"
+    },
+    {
+      "ean": "2100000949618",
+      "title": "Dragons - Créatures 2 - Kit Exclusif Dragon Rouge",
+      "slug": "dragons-creatures-2-kit-exclusif-dragon-rouge",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/dragons-creatures-2-kit-exclusif-dragon-rouge",
+      "source_file": "2100000949618-article.json"
+    },
+    {
+      "ean": "2100000949625",
+      "title": "Dragons - Créatures 2 - Kit Exclusif Grand Ver",
+      "slug": "dragons-creatures-2-kit-exclusif-grand-ver",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/dragons-creatures-2-kit-exclusif-grand-ver",
+      "source_file": "2100000949625-article.json"
+    },
+    {
+      "ean": "2100001044893",
+      "title": "Magic The Gathering : Horizons du Modern 3 - Deck Commander Incursion Eldrazi",
+      "slug": "magic-the-gathering-horizons-du-modern-3-deck-commander-incursion-eldrazi",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/magic-the-gathering-horizons-du-modern-3-deck-commander-incursion-eldrazi",
+      "source_file": "2100001044893-article.json"
+    },
+    {
+      "ean": "3760153500556",
+      "title": "Pieds Table Basse Carrom - Acacia",
+      "slug": "pieds-table-basse-carrom-acacia",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/pieds-table-basse-carrom-acacia",
+      "source_file": "3760153500556-article.json"
+    },
+    {
+      "ean": "5011921199358",
+      "title": "Warhammer : The Horus Heresy - Knight Houses : Cerastus Knight Lancer",
+      "slug": "warhammer-the-horus-heresy-knight-houses-cerastus-knight-lancer",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/warhammer-the-horus-heresy-knight-houses-cerastus-knight-lancer",
+      "source_file": "5011921199358-article.json"
+    },
+    {
+      "ean": "5011921201365",
+      "title": "Warhammer : The Horus Heresy - Knight Houses : Cerastus Knight Castigator",
+      "slug": "warhammer-the-horus-heresy-knight-houses-cerastus-knight-castigator",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/warhammer-the-horus-heresy-knight-houses-cerastus-knight-castigator",
+      "source_file": "5011921201365-article.json"
+    },
+    {
+      "ean": "5011921203604",
+      "title": "Age of Sigmar : Slaves to Darkness - Set d'Armée Noir-Serment",
+      "slug": "age-of-sigmar-slaves-to-darkness-set-darmee-noir-serment",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/age-of-sigmar-slaves-to-darkness-set-darmee-noir-serment",
+      "source_file": "5011921203604-article.json"
+    },
+    {
+      "ean": "5011921248230",
+      "title": "Warhammer : The Horus Heresy - Legiones Astartes : Fellblade Super-Heavy Battle Tank",
+      "slug": "warhammer-the-horus-heresy-legiones-astartes-fellblade-super-heavy-battle-tank",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/warhammer-the-horus-heresy-legiones-astartes-fellblade-super-heavy-battle-tank",
+      "source_file": "5011921248230-article.json"
+    },
+    {
+      "ean": "5060155020204",
+      "title": "Bibliothèque en bois brut - Tidy Books",
+      "slug": "bibliotheque-en-bois-brut-tidy-books",
+      "price": 149.9,
+      "breadcrumb_level1": "/loisirs-creatifs/",
+      "final_url": "/loisirs-creatifs/bibliotheque-en-bois-brut-tidy-books",
+      "source_file": "5060155020204-article.json"
+    },
+    {
+      "ean": "5060155020211",
+      "title": "Bibliothèque en bois blanc - Tidy Books",
+      "slug": "bibliotheque-en-bois-blanc-tidy-books",
+      "price": 149.9,
+      "breadcrumb_level1": "/loisirs-creatifs/",
+      "final_url": "/loisirs-creatifs/bibliotheque-en-bois-blanc-tidy-books",
+      "source_file": "5060155020211-article.json"
+    },
+    {
+      "ean": "5060155020617",
+      "title": "Bibliothèque en bois gris clair - Tidy Books",
+      "slug": "bibliotheque-en-bois-gris-clair-tidy-books",
+      "price": 149.9,
+      "breadcrumb_level1": "/loisirs-creatifs/",
+      "final_url": "/loisirs-creatifs/bibliotheque-en-bois-gris-clair-tidy-books",
+      "source_file": "5060155020617-article.json"
+    },
+    {
+      "ean": "6973130374379",
+      "title": "W40K - Figurine Joy Toy : Adepta Sororitas Paragon Warsuit Sister Aedita",
+      "slug": "w40k-figurine-joy-toy-adepta-sororitas-paragon-warsuit-sister-aedita",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/w40k-figurine-joy-toy-adepta-sororitas-paragon-warsuit-sister-aedita",
+      "source_file": "6973130374379-article.json"
+    },
+    {
+      "ean": "736640880848",
+      "title": "Inventions: Evolution of Ideas",
+      "slug": "inventions-evolution-of-ideas",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/inventions-evolution-of-ideas",
+      "source_file": "736640880848-article.json"
+    },
+    {
+      "ean": "7392601190352",
+      "title": "Jeu de Fléchettes Catdart electronic dartboard Walker - Bex Sport",
+      "slug": "jeu-de-flechettes-catdart-electronic-dartboard-walker-bex-sport",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/jeu-de-flechettes-catdart-electronic-dartboard-walker-bex-sport",
+      "source_file": "7392601190352-article.json"
+    },
+    {
+      "ean": "8600102607606",
+      "title": "Sorcery TCG: Contested Realm - Arthurian Legends Booster Display",
+      "slug": "sorcery-tcg-contested-realm-arthurian-legends-booster-display",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/sorcery-tcg-contested-realm-arthurian-legends-booster-display",
+      "source_file": "8600102607606-article.json"
+    },
+    {
+      "ean": "9003150500025",
+      "title": "Hybrid Devil Drivers - Carrera",
+      "slug": "hybrid-devil-drivers-carrera",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/hybrid-devil-drivers-carrera",
+      "source_file": "9003150500025-article.json"
+    },
+    {
+      "ean": "9420024739150",
+      "title": "Le Seigneur des Anneaux - Statuette Saruman",
+      "slug": "le-seigneur-des-anneaux-statuette-saruman",
+      "price": 149.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/le-seigneur-des-anneaux-statuette-saruman",
+      "source_file": "9420024739150-article.json"
+    },
+    {
+      "ean": "0787790596899",
+      "title": "TOO MANY BONES",
+      "slug": "too-many-bones",
+      "price": 149.5,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/too-many-bones",
+      "source_file": "0787790596899-article.json"
+    },
+    {
+      "ean": "2100001295806",
+      "title": "Mistral: The Western Med 1740-48",
+      "slug": "mistral-the-western-med-1740-48",
+      "price": 149.5,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/mistral-the-western-med-1740-48",
+      "source_file": "2100001295806-article.json"
+    },
+    {
+      "ean": "073854024300",
+      "title": "Jeu de 54 Cartes Dragon - Bicycle",
+      "slug": "jeu-de-54-cartes-dragon-bicycle",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/jeu-de-54-cartes-dragon-bicycle",
+      "source_file": "073854024300-article.json"
+    },
+    {
+      "ean": "073854096383",
+      "title": "Jeu de 54 Cartes Dragon Red - Bicycle",
+      "slug": "jeu-de-54-cartes-dragon-red-bicycle",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/jeu-de-54-cartes-dragon-red-bicycle",
+      "source_file": "073854096383-article.json"
+    },
+    {
+      "ean": "073854098257",
+      "title": "Jeu de 54 Cartes Naruto - Naruto Shippuden - Bicycle",
+      "slug": "jeu-de-54-cartes-naruto-naruto-shippuden-bicycle",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/jeu-de-54-cartes-naruto-naruto-shippuden-bicycle",
+      "source_file": "073854098257-article.json"
+    },
+    {
+      "ean": "073854098714",
+      "title": "Jeu de 54 Cartes Snake - Bicycle",
+      "slug": "jeu-de-54-cartes-snake-bicycle",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/jeu-de-54-cartes-snake-bicycle",
+      "source_file": "073854098714-article.json"
+    },
+    {
+      "ean": "074427160821",
+      "title": "Portfolio A4 Pokémon Écarlate et Violet - Aventures Ensemble - Ultra Pro",
+      "slug": "portfolio-a4-pokemon-ecarlate-et-violet-aventures-ensemble-ultra-pro",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/portfolio-a4-pokemon-ecarlate-et-violet-aventures-ensemble-ultra-pro",
+      "source_file": "074427160821-article.json"
+    },
+    {
+      "ean": "074427160883",
+      "title": "Portfolio A4 Pokémon Méga-Évolution – Flammes Fantasmagoriques - Ultra Pro",
+      "slug": "portfolio-a4-pokemon-mega-evolution-flammes-fantasmagoriques-ultra-pro",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/portfolio-a4-pokemon-mega-evolution-flammes-fantasmagoriques-ultra-pro",
+      "source_file": "074427160883-article.json"
+    },
+    {
+      "ean": "074427841041",
+      "title": "Portfolio A4 Pokémon Pokéball",
+      "slug": "portfolio-a4-pokemon-pokeball",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/portfolio-a4-pokemon-pokeball",
+      "source_file": "074427841041-article.json"
+    },
+    {
+      "ean": "3421272837311",
+      "title": "Hilo - Ancienne édition",
+      "slug": "hilo-ancienne-edition",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/hilo-ancienne-edition",
+      "source_file": "3421272837311-article.json"
+    },
+    {
+      "ean": "3558380100492",
+      "title": "Dixit Puzzle 500 pièces - Escape",
+      "slug": "dixit-puzzle-500-pieces-escape",
+      "price": 149,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/dixit-puzzle-500-pieces-escape",
+      "source_file": "3558380100492-article.json"
+    },
+    {
+      "ean": "3663384600784",
+      "title": "Puzzle 1000 pièces Art - Rembrandt : La Ronde de nuit",
+      "slug": "puzzle-1000-pieces-art-rembrandt-la-ronde-de-nuit",
+      "price": 149,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/puzzle-1000-pieces-art-rembrandt-la-ronde-de-nuit",
+      "source_file": "3663384600784-article.json"
+    },
+    {
+      "ean": "3770015752009",
+      "title": "Citron Coco jeu de société pirate équipe 2 à 8 joueurs",
+      "slug": "citron-coco-jeu-de-societe-pirate-equipe-2-a-8-joueurs",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/citron-coco-jeu-de-societe-pirate-equipe-2-a-8-joueurs",
+      "source_file": "3770015752009-article.json"
+    },
+    {
+      "ean": "4001504588717",
+      "title": "Puzzle 1000 pièces - Nuit d'Halloween",
+      "slug": "puzzle-1000-pieces-nuit-dhalloween",
+      "price": 149,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/puzzle-1000-pieces-nuit-dhalloween",
+      "source_file": "4001504588717-article.json"
+    },
+    {
+      "ean": "4001504589769",
+      "title": "Puzzle 1000 pièces - Terrasse à Paris",
+      "slug": "puzzle-1000-pieces-terrasse-a-paris",
+      "price": 149,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/puzzle-1000-pieces-terrasse-a-paris",
+      "source_file": "4001504589769-article.json"
+    },
+    {
+      "ean": "4001504594671",
+      "title": "Puzzle 1000 pièces - Kinkade : Paradis Naturel",
+      "slug": "puzzle-1000-pieces-kinkade-paradis-naturel",
+      "price": 149,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/puzzle-1000-pieces-kinkade-paradis-naturel",
+      "source_file": "4001504594671-article.json"
+    },
+    {
+      "ean": "4001504594985",
+      "title": "Puzzle 1000 pièces Glow in the Dark - Kinkade : La Statue de la Liberté au Crépuscule",
+      "slug": "puzzle-1000-pieces-glow-in-the-dark-kinkade-la-statue-de-la-liberte-au-crepuscule",
+      "price": 149,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/puzzle-1000-pieces-glow-in-the-dark-kinkade-la-statue-de-la-liberte-au-crepuscule",
+      "source_file": "4001504594985-article.json"
+    },
+    {
+      "ean": "4001504596750",
+      "title": "Puzzle 1000 pièces - Kinkade : Un café à Munich",
+      "slug": "puzzle-1000-pieces-kinkade-un-cafe-a-munich",
+      "price": 149,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/puzzle-1000-pieces-kinkade-un-cafe-a-munich",
+      "source_file": "4001504596750-article.json"
+    },
+    {
+      "ean": "4005556179732",
+      "title": "Puzzle Board 300-1000 pièces",
+      "slug": "puzzle-board-300-1000-pieces",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-traditionnels/",
+      "final_url": "/jeux-traditionnels/puzzle-board-300-1000-pieces",
+      "source_file": "4005556179732-article.json"
+    },
+    {
+      "ean": "4056133029735",
+      "title": "Boulder 100+ Magic: The Gathering Guild Summit - Simic - Ultimate Guard",
+      "slug": "boulder-100-magic-the-gathering-guild-summit-simic-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-magic-the-gathering-guild-summit-simic-ultimate-guard",
+      "source_file": "4056133029735-article.json"
+    },
+    {
+      "ean": "4056133029773",
+      "title": "Boulder 100+ Magic: The Gathering Guild Summit - Gruul - Ultimate Guard",
+      "slug": "boulder-100-magic-the-gathering-guild-summit-gruul-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-magic-the-gathering-guild-summit-gruul-ultimate-guard",
+      "source_file": "4056133029773-article.json"
+    },
+    {
+      "ean": "4056133038980",
+      "title": "Boulder 100+ Magic: The Gathering Aux portes des éternités - Eumidiens - Ultimate Guard",
+      "slug": "boulder-100-magic-the-gathering-aux-portes-des-eternites-eumidiens-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-magic-the-gathering-aux-portes-des-eternites-eumidiens-ultimate-guard",
+      "source_file": "4056133038980-article.json"
+    },
+    {
+      "ean": "4056133039024",
+      "title": "Boulder 100+ Magic: The Gathering Aux portes des éternités - Illvoï - Ultimate Guard",
+      "slug": "boulder-100-magic-the-gathering-aux-portes-des-eternites-illvoi-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-magic-the-gathering-aux-portes-des-eternites-illvoi-ultimate-guard",
+      "source_file": "4056133039024-article.json"
+    },
+    {
+      "ean": "4056133039048",
+      "title": "Boulder 100+ Magic: The Gathering Aux portes des éternités - Kav - Ultimate Guard",
+      "slug": "boulder-100-magic-the-gathering-aux-portes-des-eternites-kav-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-magic-the-gathering-aux-portes-des-eternites-kav-ultimate-guard",
+      "source_file": "4056133039048-article.json"
+    },
+    {
+      "ean": "4056133040266",
+      "title": "Boulder 100+ Hybrid Magic: The Gathering Mana Edition - Plains - Ultimate Guard",
+      "slug": "boulder-100-hybrid-magic-the-gathering-mana-edition-plains-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-hybrid-magic-the-gathering-mana-edition-plains-ultimate-guard",
+      "source_file": "4056133040266-article.json"
+    },
+    {
+      "ean": "4056133040280",
+      "title": "Boulder 100+ Hybrid Magic: The Gathering Mana Edition - Island - Ultimate Guard",
+      "slug": "boulder-100-hybrid-magic-the-gathering-mana-edition-island-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-hybrid-magic-the-gathering-mana-edition-island-ultimate-guard",
+      "source_file": "4056133040280-article.json"
+    },
+    {
+      "ean": "4056133040303",
+      "title": "Boulder 100+ Hybrid Magic: The Gathering Mana Edition - Mountain - Ultimate Guard",
+      "slug": "boulder-100-hybrid-magic-the-gathering-mana-edition-mountain-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-hybrid-magic-the-gathering-mana-edition-mountain-ultimate-guard",
+      "source_file": "4056133040303-article.json"
+    },
+    {
+      "ean": "4056133040327",
+      "title": "Boulder 100+ Hybrid Magic: The Gathering Mana Edition - Forest - Ultimate Guard",
+      "slug": "boulder-100-hybrid-magic-the-gathering-mana-edition-forest-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-hybrid-magic-the-gathering-mana-edition-forest-ultimate-guard",
+      "source_file": "4056133040327-article.json"
+    },
+    {
+      "ean": "4056133040341",
+      "title": "Boulder 100+ Hybrid Magic: The Gathering Mana Edition - Swamp - Ultimate Guard",
+      "slug": "boulder-100-hybrid-magic-the-gathering-mana-edition-swamp-ultimate-guard",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-100-hybrid-magic-the-gathering-mana-edition-swamp-ultimate-guard",
+      "source_file": "4056133040341-article.json"
+    },
+    {
+      "ean": "5060317000310",
+      "title": "Caisse de rangement en bois pour Croquet 6 joueurs",
+      "slug": "caisse-de-rangement-en-bois-pour-croquet-6-joueurs",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/caisse-de-rangement-en-bois-pour-croquet-6-joueurs",
+      "source_file": "5060317000310-article.json"
+    },
+    {
+      "ean": "5060317000532",
+      "title": "Arceaux de Croquet pro 16mm - Set de 6",
+      "slug": "arceaux-de-croquet-pro-16mm-set-de-6",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/arceaux-de-croquet-pro-16mm-set-de-6",
+      "source_file": "5060317000532-article.json"
+    },
+    {
+      "ean": "5060317001577",
+      "title": "Lot de 4 Sacs de rangement - échecs géants 60cm",
+      "slug": "lot-de-4-sacs-de-rangement-echecs-geants-60cm",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/lot-de-4-sacs-de-rangement-echecs-geants-60cm",
+      "source_file": "5060317001577-article.json"
+    },
+    {
+      "ean": "5907699491230",
+      "title": "Set de dés Dwarven White & Black - Q-Workshop",
+      "slug": "set-de-des-dwarven-white-and-black-q-workshop",
+      "price": 149,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/set-de-des-dwarven-white-and-black-q-workshop",
+      "source_file": "5907699491230-article.json"
+    },
+    {
+      "ean": "820650556708",
+      "title": "Booster Écarlate et Violet : Flammes Obsidiennes - Pokémon FR",
+      "slug": "booster-ecarlate-et-violet-flammes-obsidiennes-pokemon-fr",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/booster-ecarlate-et-violet-flammes-obsidiennes-pokemon-fr",
+      "source_file": "820650556708-article.json"
+    },
+    {
+      "ean": "841333132224",
+      "title": "Mission 626 - Un jeu Love Letter",
+      "slug": "mission-626-un-jeu-love-letter",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/mission-626-un-jeu-love-letter",
+      "source_file": "841333132224-article.json"
+    },
+    {
+      "ean": "887961962963",
+      "title": "UNO Iconic : 2010",
+      "slug": "uno-iconic-2010",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/uno-iconic-2010",
+      "source_file": "887961962963-article.json"
+    },
+    {
+      "ean": "9782370700117",
+      "title": "First contact - Pack collector Ghost Wolves",
+      "slug": "first-contact-pack-collector-ghost-wolves",
+      "price": 149,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/first-contact-pack-collector-ghost-wolves",
+      "source_file": "9782370700117-article.json"
+    },
+    {
+      "ean": "850060734007",
+      "title": "Ascending Empires: Zenith Edition",
+      "slug": "ascending-empires-zenith-edition",
+      "price": 148.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/ascending-empires-zenith-edition",
+      "source_file": "850060734007-article.json"
+    },
+    {
+      "ean": "3558380064022",
+      "title": "Gloomhaven - Aventures à Havrenuit",
+      "slug": "gloomhaven-aventures-a-havrenuit",
+      "price": 148.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/gloomhaven-aventures-a-havrenuit",
+      "source_file": "3558380064022-article.json"
+    },
+    {
+      "ean": "4006485218912",
+      "title": "Echecs géant - Pièces 30 cm - RollyToys",
+      "slug": "echecs-geant-pieces-30-cm-rollytoys",
+      "price": 148.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/echecs-geant-pieces-30-cm-rollytoys",
+      "source_file": "4006485218912-article.json"
+    },
+    {
+      "ean": "6943478019485",
+      "title": "Grand Piano Deluxe blanc électronique - Hape",
+      "slug": "grand-piano-deluxe-blanc-electronique-hape",
+      "price": 148.9,
+      "breadcrumb_level1": "/jeux-enfants/",
+      "final_url": "/jeux-enfants/grand-piano-deluxe-blanc-electronique-hape",
+      "source_file": "6943478019485-article.json"
+    },
+    {
+      "ean": "634482734551",
+      "title": "Mage Knight - Ultimate Edition",
+      "slug": "mage-knight-ultimate-edition",
+      "price": 148.5,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/mage-knight-ultimate-edition",
+      "source_file": "634482734551-article.json"
+    },
+    {
+      "ean": "0841333120764",
+      "title": "Star Wars Shatterpoint : Boite de base",
+      "slug": "star-wars-shatterpoint-boite-de-base",
+      "price": 147.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/star-wars-shatterpoint-boite-de-base",
+      "source_file": "0841333120764-article.json"
+    },
+    {
+      "ean": "5713799806702",
+      "title": "Warpaints Fanatic Mega Paint Set - Army Painter",
+      "slug": "warpaints-fanatic-mega-paint-set-army-painter",
+      "price": 147.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/warpaints-fanatic-mega-paint-set-army-painter",
+      "source_file": "5713799806702-article.json"
+    },
+    {
+      "ean": "2100001273323",
+      "title": "La Bataille de Preussisch-Eylau Third Edition",
+      "slug": "la-bataille-de-preussisch-eylau-third-edition",
+      "price": 147.5,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/la-bataille-de-preussisch-eylau-third-edition",
+      "source_file": "2100001273323-article.json"
+    },
+    {
+      "ean": "3558380136545",
+      "title": "The Dead Keep : Le Donjon des Morts",
+      "slug": "the-dead-keep-le-donjon-des-morts",
+      "price": 146.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/the-dead-keep-le-donjon-des-morts",
+      "source_file": "3558380136545-article.json"
+    },
+    {
+      "ean": "5901414673918",
+      "title": "Dungeons & Lasers - Décors - Grand Stronghold",
+      "slug": "dungeons-and-lasers-decors-grand-stronghold",
+      "price": 146.95,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/dungeons-and-lasers-decors-grand-stronghold",
+      "source_file": "5901414673918-article.json"
+    },
+    {
+      "ean": "5901414674151",
+      "title": "Dungeons & Lasers - Décors - \"Scales & Ales\" Tavern",
+      "slug": "dungeons-and-lasers-decors-scales-and-ales-tavern",
+      "price": 146.95,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/dungeons-and-lasers-decors-scales-and-ales-tavern",
+      "source_file": "5901414674151-article.json"
+    },
+    {
+      "ean": "5901414674748",
+      "title": "Dungeons & Lasers - Décors - Sorcerer's Spire",
+      "slug": "dungeons-and-lasers-decors-sorcerers-spire",
+      "price": 146.95,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/dungeons-and-lasers-decors-sorcerers-spire",
+      "source_file": "5901414674748-article.json"
+    },
+    {
+      "ean": "5011921225095",
+      "title": "Warhammer 40K : Chaos Knights - Knight Ruinator",
+      "slug": "warhammer-40k-chaos-knights-knight-ruinator",
+      "price": 146.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/warhammer-40k-chaos-knights-knight-ruinator",
+      "source_file": "5011921225095-article.json"
+    },
+    {
+      "ean": "5011921241767",
+      "title": "Age of Sigmar : Helsmiths of Hashut - Set d'Armée",
+      "slug": "age-of-sigmar-helsmiths-of-hashut-set-darmee",
+      "price": 146.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/age-of-sigmar-helsmiths-of-hashut-set-darmee",
+      "source_file": "5011921241767-article.json"
+    },
+    {
+      "ean": "5213009014144",
+      "title": "Conquest - Nords - Sea Jotnar",
+      "slug": "conquest-nords-sea-jotnar",
+      "price": 146.5,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/conquest-nords-sea-jotnar",
+      "source_file": "5213009014144-article.json"
+    },
+    {
+      "ean": "5213009019651",
+      "title": "Conquest - Weaver Courts - One Player Starter Set",
+      "slug": "conquest-weaver-courts-one-player-starter-set",
+      "price": 146.5,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/conquest-weaver-courts-one-player-starter-set",
+      "source_file": "5213009019651-article.json"
+    },
+    {
+      "ean": "2100000609482",
+      "title": "Triumph of Chaos V.2 - Deluxe Edition",
+      "slug": "triumph-of-chaos-v2-deluxe-edition",
+      "price": 145.95,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/triumph-of-chaos-v2-deluxe-edition",
+      "source_file": "2100000609482-article.json"
+    },
+    {
+      "ean": "2100001084554",
+      "title": "Cartes à jouer Theory11 - Coffret Seigneur des Anneaux",
+      "slug": "cartes-a-jouer-theory11-coffret-seigneur-des-anneaux",
+      "price": 145.95,
+      "breadcrumb_level1": "/jeux-classiques/",
+      "final_url": "/jeux-classiques/cartes-a-jouer-theory11-coffret-seigneur-des-anneaux",
+      "source_file": "2100001084554-article.json"
+    },
+    {
+      "ean": "850016557131",
+      "title": "Cartes à jouer Theory11 - Coffret Star Wars",
+      "slug": "cartes-a-jouer-theory11-coffret-star-wars",
+      "price": 145.95,
+      "breadcrumb_level1": "/jeux-classiques/",
+      "final_url": "/jeux-classiques/cartes-a-jouer-theory11-coffret-star-wars",
+      "source_file": "850016557131-article.json"
+    },
+    {
+      "ean": "850049111126",
+      "title": "Cartes à jouer Theory11 - Coffret Harry Potter",
+      "slug": "cartes-a-jouer-theory11-coffret-harry-potter",
+      "price": 145.95,
+      "breadcrumb_level1": "/jeux-classiques/",
+      "final_url": "/jeux-classiques/cartes-a-jouer-theory11-coffret-harry-potter",
+      "source_file": "850049111126-article.json"
+    },
+    {
+      "ean": "3700183425474",
+      "title": "Pièces échecs 95mm Sheesham Luxe - Cases 50mm",
+      "slug": "pieces-echecs-95mm-sheesham-luxe-cases-50mm",
+      "price": 145.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/pieces-echecs-95mm-sheesham-luxe-cases-50mm",
+      "source_file": "3700183425474-article.json"
+    },
+    {
+      "ean": "5901414676278",
+      "title": "Dungeons & Lasers - Undercity Hideout",
+      "slug": "dungeons-and-lasers-undercity-hideout",
+      "price": 145.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/dungeons-and-lasers-undercity-hideout",
+      "source_file": "5901414676278-article.json"
+    },
+    {
+      "ean": "95109030324",
+      "title": "Advanced Pacific Theater of Operations",
+      "slug": "advanced-pacific-theater-of-operations",
+      "price": 145.5,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/advanced-pacific-theater-of-operations",
+      "source_file": "95109030324-article.json"
+    },
+    {
+      "ean": "073854098059",
+      "title": "Jeu de 54 Cartes Bicycle 140th Anniversary",
+      "slug": "jeu-de-54-cartes-bicycle-140th-anniversary",
+      "price": 145,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/jeu-de-54-cartes-bicycle-140th-anniversary",
+      "source_file": "073854098059-article.json"
+    },
+    {
+      "ean": "3770019647608",
+      "title": "Nemesis Lockdown",
+      "slug": "nemesis-lockdown",
+      "price": 145,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/nemesis-lockdown",
+      "source_file": "3770019647608-article.json"
+    },
+    {
+      "ean": "4056133027830",
+      "title": "Boulder Deck Case 100+ Druidic Secrets Fatum (Rose) - Ultimate Guard",
+      "slug": "boulder-deck-case-100-druidic-secrets-fatum-rose-ultimate-guard",
+      "price": 145,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-deck-case-100-druidic-secrets-fatum-rose-ultimate-guard",
+      "source_file": "4056133027830-article.json"
+    },
+    {
+      "ean": "4056133027878",
+      "title": "Boulder Deck Case 100+ Druidic Secrets Impetus (Orange foncé) - Ultimate Guard",
+      "slug": "boulder-deck-case-100-druidic-secrets-impetus-orange-fonce-ultimate-guard",
+      "price": 145,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/boulder-deck-case-100-druidic-secrets-impetus-orange-fonce-ultimate-guard",
+      "source_file": "4056133027878-article.json"
+    },
+    {
+      "ean": "196852384327",
+      "title": "Enemy Action: Kharkov",
+      "slug": "enemy-action-kharkov",
+      "price": 144.95,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/enemy-action-kharkov",
+      "source_file": "196852384327-article.json"
+    },
+    {
+      "ean": "197644595488",
+      "title": "The Last Gamble: The Ardennes Offensive, December 1944 – Designer Signature Edition",
+      "slug": "the-last-gamble-the-ardennes-offensive-december-1944-designer-signature-edition",
+      "price": 144.95,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/the-last-gamble-the-ardennes-offensive-december-1944-designer-signature-edition",
+      "source_file": "197644595488-article.json"
+    },
+    {
+      "ean": "2100001168568",
+      "title": "The Bleakness - Limited Edition Bundle",
+      "slug": "the-bleakness-limited-edition-bundle",
+      "price": 144.95,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/the-bleakness-limited-edition-bundle",
+      "source_file": "2100001168568-article.json"
+    },
+    {
+      "ean": "4010350260234",
+      "title": "Hamburg Deluxe",
+      "slug": "hamburg-deluxe",
+      "price": 144.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/hamburg-deluxe",
+      "source_file": "4010350260234-article.json"
+    },
+    {
+      "ean": "4250876857925",
+      "title": "Dungeons & Dragons - Bâton de mousse Wizards 155 cm",
+      "slug": "dungeons-and-dragons-baton-de-mousse-wizards-155-cm",
+      "price": 144.95,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/dungeons-and-dragons-baton-de-mousse-wizards-155-cm",
+      "source_file": "4250876857925-article.json"
+    },
+    {
+      "ean": "5905090500001",
+      "title": "Lobotomy 2: Manhunt",
+      "slug": "lobotomy-2-manhunt",
+      "price": 144.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/lobotomy-2-manhunt",
+      "source_file": "5905090500001-article.json"
+    },
+    {
+      "ean": "736640880879",
+      "title": "Vinhos Deluxe Edition : Complète Bundle",
+      "slug": "vinhos-deluxe-edition-complete-bundle",
+      "price": 144.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/vinhos-deluxe-edition-complete-bundle",
+      "source_file": "736640880879-article.json"
+    },
+    {
+      "ean": "810011726758",
+      "title": "Robo Rally: 30th Anniversary Edition",
+      "slug": "robo-rally-30th-anniversary-edition",
+      "price": 144.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/robo-rally-30th-anniversary-edition",
+      "source_file": "810011726758-article.json"
+    },
+    {
+      "ean": "9781957159324",
+      "title": "Savage Worlds - Legend of Ghost Mountain Boxed Set",
+      "slug": "savage-worlds-legend-of-ghost-mountain-boxed-set",
+      "price": 144.95,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/savage-worlds-legend-of-ghost-mountain-boxed-set",
+      "source_file": "9781957159324-article.json"
+    },
+    {
+      "ean": "3663506017124",
+      "title": "Miniature 1:12 Renault R4L GTL rouge 1978 - Solido",
+      "slug": "miniature-112-renault-r4l-gtl-rouge-1978-solido",
+      "price": 144.9,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/miniature-112-renault-r4l-gtl-rouge-1978-solido",
+      "source_file": "3663506017124-article.json"
+    },
+    {
+      "ean": "3760377270327",
+      "title": "Carrom Basic 77cm - Jeux chavet",
+      "slug": "carrom-basic-77cm-jeux-chavet",
+      "price": 144.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/carrom-basic-77cm-jeux-chavet",
+      "source_file": "3760377270327-article.json"
+    },
+    {
+      "ean": "8410788895262",
+      "title": "Ma Maison Pat'Patrouille - Chicos",
+      "slug": "ma-maison-patpatrouille-chicos",
+      "price": 144.9,
+      "breadcrumb_level1": "/plein-air/",
+      "final_url": "/plein-air/ma-maison-patpatrouille-chicos",
+      "source_file": "8410788895262-article.json"
+    },
+    {
+      "ean": "8435748606177",
+      "title": "La Tablette 7 Pouces Gulli Motion Edtion - Kurio",
+      "slug": "la-tablette-7-pouces-gulli-motion-edtion-kurio",
+      "price": 144.9,
+      "breadcrumb_level1": "/jeux-enfants/",
+      "final_url": "/jeux-enfants/la-tablette-7-pouces-gulli-motion-edtion-kurio",
+      "source_file": "8435748606177-article.json"
+    },
+    {
+      "ean": "0700615556533",
+      "title": "The Pursuit of Happiness: Big Box",
+      "slug": "the-pursuit-of-happiness-big-box",
+      "price": 144.66,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/the-pursuit-of-happiness-big-box",
+      "source_file": "0700615556533-article.json"
+    },
+    {
+      "ean": "2100001063849",
+      "title": "Tollingchester - Market Day Starter",
+      "slug": "tollingchester-market-day-starter",
+      "price": 144.5,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/tollingchester-market-day-starter",
+      "source_file": "2100001063849-article.json"
+    },
+    {
+      "ean": "5213009019958",
+      "title": "Conquest - Spires - Conquest 2026 Supercharged Starter Set",
+      "slug": "conquest-spires-conquest-2026-supercharged-starter-set",
+      "price": 144.5,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/conquest-spires-conquest-2026-supercharged-starter-set",
+      "source_file": "5213009019958-article.json"
+    },
+    {
+      "ean": "5213009019972",
+      "title": "Conquest - Dweghom - Conquest 2026 Supercharged Starter Set",
+      "slug": "conquest-dweghom-conquest-2026-supercharged-starter-set",
+      "price": 144.5,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/conquest-dweghom-conquest-2026-supercharged-starter-set",
+      "source_file": "5213009019972-article.json"
+    },
+    {
+      "ean": "4050368982308",
+      "title": "Disney Lorcana 1er Chapitre - Display",
+      "slug": "disney-lorcana-1er-chapitre-display",
+      "price": 144,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/disney-lorcana-1er-chapitre-display",
+      "source_file": "4050368982308-article.json"
+    },
+    {
+      "ean": "4050368982735",
+      "title": "Disney Lorcana 2ème Chapitre - Display",
+      "slug": "disney-lorcana-2eme-chapitre-display",
+      "price": 144,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/disney-lorcana-2eme-chapitre-display",
+      "source_file": "4050368982735-article.json"
+    },
+    {
+      "ean": "782706875334",
+      "title": "Old School Tactical Volume IV - Italian Theatre",
+      "slug": "old-school-tactical-volume-iv-italian-theatre",
+      "price": 143.95,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/old-school-tactical-volume-iv-italian-theatre",
+      "source_file": "782706875334-article.json"
+    },
+    {
+      "ean": "841333123550",
+      "title": "Descent : Légendes des Ténèbres - La Guerre du Traître",
+      "slug": "descent-legendes-des-tenebres-la-guerre-du-traitre",
+      "price": 143.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/descent-legendes-des-tenebres-la-guerre-du-traitre",
+      "source_file": "841333123550-article.json"
+    },
+    {
+      "ean": "5060770870666",
+      "title": "Estun Village Set",
+      "slug": "estun-village-set",
+      "price": 142.95,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/estun-village-set",
+      "source_file": "5060770870666-article.json"
+    },
+    {
+      "ean": "5011921174003",
+      "title": "Warhammer 40K : Imperial Knights - Knight Dominus",
+      "slug": "warhammer-40k-imperial-knights-knight-dominus",
+      "price": 142.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/warhammer-40k-imperial-knights-knight-dominus",
+      "source_file": "5011921174003-article.json"
+    },
+    {
+      "ean": "5011921191550",
+      "title": "Age of Sigmar : Slaves to Darkness - Archaon, the Everchosen",
+      "slug": "age-of-sigmar-slaves-to-darkness-archaon-the-everchosen",
+      "price": 142.5,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/age-of-sigmar-slaves-to-darkness-archaon-the-everchosen",
+      "source_file": "5011921191550-article.json"
+    },
+    {
+      "ean": "5907222999837",
+      "title": "Nemesis: Lockdown",
+      "slug": "nemesis-lockdown",
+      "price": 142.5,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/nemesis-lockdown",
+      "source_file": "5907222999837-article.json"
+    },
+    {
+      "ean": "673498518816",
+      "title": "Heiho: The Mass Battle Samurai Game (10mm)",
+      "slug": "heiho-the-mass-battle-samurai-game-10mm",
+      "price": 142.5,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/heiho-the-mass-battle-samurai-game-10mm",
+      "source_file": "673498518816-article.json"
+    },
+    {
+      "ean": "5060770871939",
+      "title": "Armoured Clash - Enlightened Faction Battlegroup - Starter Set",
+      "slug": "armoured-clash-enlightened-faction-battlegroup-starter-set",
+      "price": 141.95,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/armoured-clash-enlightened-faction-battlegroup-starter-set",
+      "source_file": "5060770871939-article.json"
+    },
+    {
+      "ean": "5060770872080",
+      "title": "Armoured Clash - Imperium Faction Battlegroup - Starter Set",
+      "slug": "armoured-clash-imperium-faction-battlegroup-starter-set",
+      "price": 141.95,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/armoured-clash-imperium-faction-battlegroup-starter-set",
+      "source_file": "5060770872080-article.json"
+    },
+    {
+      "ean": "5060770872110",
+      "title": "Armoured Clash - Alliance Faction Battlegroup - Starter Set",
+      "slug": "armoured-clash-alliance-faction-battlegroup-starter-set",
+      "price": 141.95,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/armoured-clash-alliance-faction-battlegroup-starter-set",
+      "source_file": "5060770872110-article.json"
+    },
+    {
+      "ean": "634482963227",
+      "title": "D&D Icons of the Realms: Black Dracolich",
+      "slug": "dandd-icons-of-the-realms-black-dracolich",
+      "price": 141.95,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/dandd-icons-of-the-realms-black-dracolich",
+      "source_file": "634482963227-article.json"
+    },
+    {
+      "ean": "860006642648",
+      "title": "The Binding of Isaac: Four Souls Ultimate Collection",
+      "slug": "the-binding-of-isaac-four-souls-ultimate-collection",
+      "price": 141.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/the-binding-of-isaac-four-souls-ultimate-collection",
+      "source_file": "860006642648-article.json"
+    },
+    {
+      "ean": "3760153500020",
+      "title": "Carrom WCT Ellora 70cm Acacia",
+      "slug": "carrom-wct-ellora-70cm-acacia",
+      "price": 141.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/carrom-wct-ellora-70cm-acacia",
+      "source_file": "3760153500020-article.json"
+    },
+    {
+      "ean": "4050368983145",
+      "title": "Disney Lorcana 3ème Chapitre - Display",
+      "slug": "disney-lorcana-3eme-chapitre-display",
+      "price": 141.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/disney-lorcana-3eme-chapitre-display",
+      "source_file": "4050368983145-article.json"
+    },
+    {
+      "ean": "4050368983442",
+      "title": "Disney Lorcana 4ème Chapitre - Display",
+      "slug": "disney-lorcana-4eme-chapitre-display",
+      "price": 141.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/disney-lorcana-4eme-chapitre-display",
+      "source_file": "4050368983442-article.json"
+    },
+    {
+      "ean": "5011921169924",
+      "title": "Warhammer 40K : T'Au Empire - Stormsurge",
+      "slug": "warhammer-40k-tau-empire-stormsurge",
+      "price": 141.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/warhammer-40k-tau-empire-stormsurge",
+      "source_file": "5011921169924-article.json"
+    },
+    {
+      "ean": "5011921225071",
+      "title": "Warhammer 40K : Imperial Knights - Knight Questoris",
+      "slug": "warhammer-40k-imperial-knights-knight-questoris",
+      "price": 141.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/warhammer-40k-imperial-knights-knight-questoris",
+      "source_file": "5011921225071-article.json"
+    },
+    {
+      "ean": "2100000987863",
+      "title": "The Fall of Tobruk: Rommel’s Greatest Victory",
+      "slug": "the-fall-of-tobruk-rommels-greatest-victory",
+      "price": 141.5,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/the-fall-of-tobruk-rommels-greatest-victory",
+      "source_file": "2100000987863-article.json"
+    },
+    {
+      "ean": "860003687703",
+      "title": "Apex Theropod Deck Building Game: Collected Edition",
+      "slug": "apex-theropod-deck-building-game-collected-edition",
+      "price": 141.5,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/apex-theropod-deck-building-game-collected-edition",
+      "source_file": "860003687703-article.json"
+    },
+    {
+      "ean": "5060469667256",
+      "title": "Kings of War - Méga Armée Halfling",
+      "slug": "kings-of-war-mega-armee-halfling",
+      "price": 140,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/kings-of-war-mega-armee-halfling",
+      "source_file": "5060469667256-article.json"
+    },
+    {
+      "ean": "9782374417295",
+      "title": "Section 13 - Collector",
+      "slug": "section-13-collector",
+      "price": 140,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/section-13-collector",
+      "source_file": "9782374417295-article.json"
+    },
+    {
+      "ean": "9782380240085",
+      "title": "Oreste - Edition Collector",
+      "slug": "oreste-edition-collector",
+      "price": 140,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/oreste-edition-collector",
+      "source_file": "9782380240085-article.json"
+    },
+    {
+      "ean": "9782380240115",
+      "title": "Aria : Édition Collector",
+      "slug": "aria-edition-collector",
+      "price": 140,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/aria-edition-collector",
+      "source_file": "9782380240115-article.json"
+    },
+    {
+      "ean": "5213009018128",
+      "title": "Conquest - Promethean Oracle Artisan Series (Dual Kit) - City States",
+      "slug": "conquest-promethean-oracle-artisan-series-dual-kit-city-states",
+      "price": 139.99,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/conquest-promethean-oracle-artisan-series-dual-kit-city-states",
+      "source_file": "5213009018128-article.json"
+    },
+    {
+      "ean": "9782380240405",
+      "title": "Game of Rôles Collection - Édition Collector",
+      "slug": "game-of-roles-collection-edition-collector",
+      "price": 139.99,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/game-of-roles-collection-edition-collector",
+      "source_file": "9782380240405-article.json"
+    },
+    {
+      "ean": "195166207094",
+      "title": "Magic The Gathering : March of the Machine - Draft Booster Display",
+      "slug": "magic-the-gathering-march-of-the-machine-draft-booster-display",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/magic-the-gathering-march-of-the-machine-draft-booster-display",
+      "source_file": "195166207094-article.json"
+    },
+    {
+      "ean": "195166271224",
+      "title": "Magic the Gathering : FINAL FANTASY - Chocobo Bundle",
+      "slug": "magic-the-gathering-final-fantasy-chocobo-bundle",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/magic-the-gathering-final-fantasy-chocobo-bundle",
+      "source_file": "195166271224-article.json"
+    },
+    {
+      "ean": "2100000757046",
+      "title": "Highway to the Kremlin II",
+      "slug": "highway-to-the-kremlin-ii",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/highway-to-the-kremlin-ii",
+      "source_file": "2100000757046-article.json"
+    },
+    {
+      "ean": "2100000842360",
+      "title": "Bonaparte in the Quadrilateral",
+      "slug": "bonaparte-in-the-quadrilateral",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/bonaparte-in-the-quadrilateral",
+      "source_file": "2100000842360-article.json"
+    },
+    {
+      "ean": "2100001180713",
+      "title": "Altered - Bundle Boites de boosters Set 2 et Set 3",
+      "slug": "altered-bundle-boites-de-boosters-set-2-et-set-3",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/altered-bundle-boites-de-boosters-set-2-et-set-3",
+      "source_file": "2100001180713-article.json"
+    },
+    {
+      "ean": "2100001180720",
+      "title": "Altered - Bundle Boites de boosters Set 1 et Set 2",
+      "slug": "altered-bundle-boites-de-boosters-set-1-et-set-2",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/altered-bundle-boites-de-boosters-set-1-et-set-2",
+      "source_file": "2100001180720-article.json"
+    },
+    {
+      "ean": "2100001197445",
+      "title": "Cretaceous Rails: Crowdfunding Exclusive Edition",
+      "slug": "cretaceous-rails-crowdfunding-exclusive-edition",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/cretaceous-rails-crowdfunding-exclusive-edition",
+      "source_file": "2100001197445-article.json"
+    },
+    {
+      "ean": "2100001226114",
+      "title": "Altered - Bundle Boites de boosters Set 3 et Set 4",
+      "slug": "altered-bundle-boites-de-boosters-set-3-et-set-4",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/altered-bundle-boites-de-boosters-set-3-et-set-4",
+      "source_file": "2100001226114-article.json"
+    },
+    {
+      "ean": "2100001270483",
+      "title": "Jeu d'échecs Prestige Palissandre (Bundle)",
+      "slug": "jeu-dechecs-prestige-palissandre-bundle",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-classiques/",
+      "final_url": "/jeux-classiques/jeu-dechecs-prestige-palissandre-bundle",
+      "source_file": "2100001270483-article.json"
+    },
+    {
+      "ean": "2100001284466",
+      "title": "S.T.A.L.K.E.R - Zone Threats (Sundrop)",
+      "slug": "stalker-zone-threats-sundrop",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/stalker-zone-threats-sundrop",
+      "source_file": "2100001284466-article.json"
+    },
+    {
+      "ean": "2100001304058",
+      "title": "One Piece Le Jeu de Cartes - EB03 Heroines Edition - Display de 24 Boosters",
+      "slug": "one-piece-le-jeu-de-cartes-eb03-heroines-edition-display-de-24-boosters",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/one-piece-le-jeu-de-cartes-eb03-heroines-edition-display-de-24-boosters",
+      "source_file": "2100001304058-article.json"
+    },
+    {
+      "ean": "3760397180101",
+      "title": "Altered - Beyond the Gates - 36 boosters display",
+      "slug": "altered-beyond-the-gates-36-boosters-display",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/altered-beyond-the-gates-36-boosters-display",
+      "source_file": "3760397180101-article.json"
+    },
+    {
+      "ean": "3760397180989",
+      "title": "Altered - Trial By Frost - 36 Boosters Display",
+      "slug": "altered-trial-by-frost-36-boosters-display",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/altered-trial-by-frost-36-boosters-display",
+      "source_file": "3760397180989-article.json"
+    },
+    {
+      "ean": "3760397181184",
+      "title": "Altered - Whispers from the Maze - 36 boosters display",
+      "slug": "altered-whispers-from-the-maze-36-boosters-display",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/altered-whispers-from-the-maze-36-boosters-display",
+      "source_file": "3760397181184-article.json"
+    },
+    {
+      "ean": "3760397181573",
+      "title": "Altered - Skybound Odyssey - 36 Boosters display",
+      "slug": "altered-skybound-odyssey-36-boosters-display",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/altered-skybound-odyssey-36-boosters-display",
+      "source_file": "3760397181573-article.json"
+    },
+    {
+      "ean": "5213009017763",
+      "title": "Conquest - Nords - Jotnar Seidr: Artisan Series",
+      "slug": "conquest-nords-jotnar-seidr-artisan-series",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/conquest-nords-jotnar-seidr-artisan-series",
+      "source_file": "5213009017763-article.json"
+    },
+    {
+      "ean": "5907222999073",
+      "title": "Nemesis",
+      "slug": "nemesis",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/nemesis",
+      "source_file": "5907222999073-article.json"
+    },
+    {
+      "ean": "6430018279015",
+      "title": "Eclipse : Second Dawn for the Galaxy",
+      "slug": "eclipse-second-dawn-for-the-galaxy",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/eclipse-second-dawn-for-the-galaxy",
+      "source_file": "6430018279015-article.json"
+    },
+    {
+      "ean": "704725644869",
+      "title": "Hoplomachus - Remastered",
+      "slug": "hoplomachus-remastered",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/hoplomachus-remastered",
+      "source_file": "704725644869-article.json"
+    },
+    {
+      "ean": "736640880466",
+      "title": "Escape Plan (avec Upgrade Pack)",
+      "slug": "escape-plan-avec-upgrade-pack",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/escape-plan-avec-upgrade-pack",
+      "source_file": "736640880466-article.json"
+    },
+    {
+      "ean": "8052282852596",
+      "title": "The Breach - Gene.Sys",
+      "slug": "the-breach-genesys",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/the-breach-genesys",
+      "source_file": "8052282852596-article.json"
+    },
+    {
+      "ean": "850062015036",
+      "title": "Brink: Deluxe Edition",
+      "slug": "brink-deluxe-edition",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/brink-deluxe-edition",
+      "source_file": "850062015036-article.json"
+    },
+    {
+      "ean": "895741001320",
+      "title": "Masks of Nyarlathotep - Gamer Prop Set",
+      "slug": "masks-of-nyarlathotep-gamer-prop-set",
+      "price": 139.95,
+      "breadcrumb_level1": "/jeux-de-role/",
+      "final_url": "/jeux-de-role/masks-of-nyarlathotep-gamer-prop-set",
+      "source_file": "895741001320-article.json"
+    },
+    {
+      "ean": "0810155273583",
+      "title": "Riftbound: League Of Legends - Set 2: Spiritforged Display",
+      "slug": "riftbound-league-of-legends-set-2-spiritforged-display",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/riftbound-league-of-legends-set-2-spiritforged-display",
+      "source_file": "0810155273583-article.json"
+    },
+    {
+      "ean": "0841333123550",
+      "title": "Descent LdT - Extension La Guerre du Traître",
+      "slug": "descent-ldt-extension-la-guerre-du-traitre",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/descent-ldt-extension-la-guerre-du-traitre",
+      "source_file": "0841333123550-article.json"
+    },
+    {
+      "ean": "195166290713",
+      "title": "Magic the Gathering : Avatar - Jumpstart Booster Display",
+      "slug": "magic-the-gathering-avatar-jumpstart-booster-display",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/magic-the-gathering-avatar-jumpstart-booster-display",
+      "source_file": "195166290713-article.json"
+    },
+    {
+      "ean": "195166305325",
+      "title": "Magic the Gathering : Lorwyn Eclipsed - Play Booster Display",
+      "slug": "magic-the-gathering-lorwyn-eclipsed-play-booster-display",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/magic-the-gathering-lorwyn-eclipsed-play-booster-display",
+      "source_file": "195166305325-article.json"
+    },
+    {
+      "ean": "3371442403955",
+      "title": "Cornhole SEBO XL (1m20) + 8 sacs",
+      "slug": "cornhole-sebo-xl-1m20-8-sacs",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/cornhole-sebo-xl-1m20-8-sacs",
+      "source_file": "3371442403955-article.json"
+    },
+    {
+      "ean": "3701221502904",
+      "title": "Peluche Sowen : Ours Sable 80cm - Maïlou Tradition",
+      "slug": "peluche-sowen-ours-sable-80cm-mailou-tradition",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-enfants/",
+      "final_url": "/jeux-enfants/peluche-sowen-ours-sable-80cm-mailou-tradition",
+      "source_file": "3701221502904-article.json"
+    },
+    {
+      "ean": "3701221502911",
+      "title": "Peluche Sowen : Ours Fauve 80cm - Maïlou Tradition",
+      "slug": "peluche-sowen-ours-fauve-80cm-mailou-tradition",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-enfants/",
+      "final_url": "/jeux-enfants/peluche-sowen-ours-fauve-80cm-mailou-tradition",
+      "source_file": "3701221502911-article.json"
+    },
+    {
+      "ean": "3701221502928",
+      "title": "Peluche Sowen : Ours Eucalyptus 80cm - Maïlou Tradition",
+      "slug": "peluche-sowen-ours-eucalyptus-80cm-mailou-tradition",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-enfants/",
+      "final_url": "/jeux-enfants/peluche-sowen-ours-eucalyptus-80cm-mailou-tradition",
+      "source_file": "3701221502928-article.json"
+    },
+    {
+      "ean": "3701221502935",
+      "title": "Peluche Sowen : Eléphant Gris souris 80cm - Maïlou Tradition",
+      "slug": "peluche-sowen-elephant-gris-souris-80cm-mailou-tradition",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-enfants/",
+      "final_url": "/jeux-enfants/peluche-sowen-elephant-gris-souris-80cm-mailou-tradition",
+      "source_file": "3701221502935-article.json"
+    },
+    {
+      "ean": "3760397181559",
+      "title": "Altered - Display de 36 boosters - Odyssée des Cieux",
+      "slug": "altered-display-de-36-boosters-odyssee-des-cieux",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/altered-display-de-36-boosters-odyssee-des-cieux",
+      "source_file": "3760397181559-article.json"
+    },
+    {
+      "ean": "4012927190524",
+      "title": "Yu-Gi-Oh! - La Ruée du Quart de Siècle - 24 Boosters",
+      "slug": "yu-gi-oh-la-ruee-du-quart-de-siecle-24-boosters",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/yu-gi-oh-la-ruee-du-quart-de-siecle-24-boosters",
+      "source_file": "4012927190524-article.json"
+    },
+    {
+      "ean": "4014888236143",
+      "title": "Tandem Boards - Jeu éducatif Beleduc",
+      "slug": "tandem-boards-jeu-educatif-beleduc",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/tandem-boards-jeu-educatif-beleduc",
+      "source_file": "4014888236143-article.json"
+    },
+    {
+      "ean": "4014888255106",
+      "title": "Jeu de pêche XXL - Beleduc",
+      "slug": "jeu-de-peche-xxl-beleduc",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/jeu-de-peche-xxl-beleduc",
+      "source_file": "4014888255106-article.json"
+    },
+    {
+      "ean": "4050368984579",
+      "title": "Disney Lorcana 5ème Chapitre - Display",
+      "slug": "disney-lorcana-5eme-chapitre-display",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/disney-lorcana-5eme-chapitre-display",
+      "source_file": "4050368984579-article.json"
+    },
+    {
+      "ean": "4050368984685",
+      "title": "Disney Lorcana 6ème Chapitre - Display",
+      "slug": "disney-lorcana-6eme-chapitre-display",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/disney-lorcana-6eme-chapitre-display",
+      "source_file": "4050368984685-article.json"
+    },
+    {
+      "ean": "4050368986412",
+      "title": "Disney Lorcana 9ème Chapitre - Display - Fabuleux",
+      "slug": "disney-lorcana-9eme-chapitre-display-fabuleux",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/disney-lorcana-9eme-chapitre-display-fabuleux",
+      "source_file": "4050368986412-article.json"
+    },
+    {
+      "ean": "4582769796463",
+      "title": "One Piece : OP11 Des poings vifs comme l'éclair pack 24 Boosters FR",
+      "slug": "one-piece-op11-des-poings-vifs-comme-leclair-pack-24-boosters-fr",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/one-piece-op11-des-poings-vifs-comme-leclair-pack-24-boosters-fr",
+      "source_file": "4582769796463-article.json"
+    },
+    {
+      "ean": "4582769796548",
+      "title": "One Piece - Display de 24 boosters - EB02 Anime 25th Collection",
+      "slug": "one-piece-display-de-24-boosters-eb02-anime-25th-collection",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/one-piece-display-de-24-boosters-eb02-anime-25th-collection",
+      "source_file": "4582769796548-article.json"
+    },
+    {
+      "ean": "4589504962275",
+      "title": "Figurine Goldorak - Classique Gris 40cm",
+      "slug": "figurine-goldorak-classique-gris-40cm",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/figurine-goldorak-classique-gris-40cm",
+      "source_file": "4589504962275-article.json"
+    },
+    {
+      "ean": "4589504962299",
+      "title": "Figurine Goldorak - Manga Blanc 40cm",
+      "slug": "figurine-goldorak-manga-blanc-40cm",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/figurine-goldorak-manga-blanc-40cm",
+      "source_file": "4589504962299-article.json"
+    },
+    {
+      "ean": "5010996316431",
+      "title": "Magic the Gathering : Avatar - Boîte de 24 boosters Jumpstart",
+      "slug": "magic-the-gathering-avatar-boite-de-24-boosters-jumpstart",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/magic-the-gathering-avatar-boite-de-24-boosters-jumpstart",
+      "source_file": "5010996316431-article.json"
+    },
+    {
+      "ean": "5010996346674",
+      "title": "Magic : Lorwyn Eclipsé - 30 Boosters de Jeu VF",
+      "slug": "magic-lorwyn-eclipse-30-boosters-de-jeu-vf",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/magic-lorwyn-eclipse-30-boosters-de-jeu-vf",
+      "source_file": "5010996346674-article.json"
+    },
+    {
+      "ean": "5011921053445",
+      "title": "Citadel - Valise à Figurines Crusade",
+      "slug": "citadel-valise-a-figurines-crusade",
+      "price": 139.9,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/citadel-valise-a-figurines-crusade",
+      "source_file": "5011921053445-article.json"
+    },
+    {
+      "ean": "5011921184088",
+      "title": "Warhammer 40K : Astra Militarum - Baneblade",
+      "slug": "warhammer-40k-astra-militarum-baneblade",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/warhammer-40k-astra-militarum-baneblade",
+      "source_file": "5011921184088-article.json"
+    },
+    {
+      "ean": "5011921226061",
+      "title": "Age of Sigmar : Soulblight Gravelords - Prince Vhordrai",
+      "slug": "age-of-sigmar-soulblight-gravelords-prince-vhordrai",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-figurines/",
+      "final_url": "/jeux-de-figurines/age-of-sigmar-soulblight-gravelords-prince-vhordrai",
+      "source_file": "5011921226061-article.json"
+    },
+    {
+      "ean": "810155273248",
+      "title": "Riftbound: League Of Legends - Set 1: Origins Display",
+      "slug": "riftbound-league-of-legends-set-1-origins-display",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-cartes-a-collectionner/",
+      "final_url": "/jeux-de-cartes-a-collectionner/riftbound-league-of-legends-set-1-origins-display",
+      "source_file": "810155273248-article.json"
+    },
+    {
+      "ean": "817054011636",
+      "title": "A Time for Trumpets",
+      "slug": "a-time-for-trumpets",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/a-time-for-trumpets",
+      "source_file": "817054011636-article.json"
+    },
+    {
+      "ean": "8435407617407",
+      "title": "Twilight Imperium 4è Édition",
+      "slug": "twilight-imperium-4e-edition",
+      "price": 139.9,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/twilight-imperium-4e-edition",
+      "source_file": "8435407617407-article.json"
+    },
+    {
+      "ean": "073854097892",
+      "title": "Jeu de 54 Byzantine - Bicycle",
+      "slug": "jeu-de-54-byzantine-bicycle",
+      "price": 139,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/jeu-de-54-byzantine-bicycle",
+      "source_file": "073854097892-article.json"
+    },
+    {
+      "ean": "073854098592",
+      "title": "Jeu de 54 Cartes Kuromi - Bicycle",
+      "slug": "jeu-de-54-cartes-kuromi-bicycle",
+      "price": 139,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/jeu-de-54-cartes-kuromi-bicycle",
+      "source_file": "073854098592-article.json"
+    },
+    {
+      "ean": "3070900085749",
+      "title": "Aquarium Logic",
+      "slug": "aquarium-logic",
+      "price": 139,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/aquarium-logic",
+      "source_file": "3070900085749-article.json"
+    },
+    {
+      "ean": "3701625913818",
+      "title": "Porte-clés D20 Vieil Or et Lot de 7 mini-dés métal",
+      "slug": "porte-cles-d20-vieil-or-et-lot-de-7-mini-des-metal",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/porte-cles-d20-vieil-or-et-lot-de-7-mini-des-metal",
+      "source_file": "3701625913818-article.json"
+    },
+    {
+      "ean": "4056133010009",
+      "title": "Tube de rangement Ultimate Guard Matpod - Transparent",
+      "slug": "tube-de-rangement-ultimate-guard-matpod-transparent",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/tube-de-rangement-ultimate-guard-matpod-transparent",
+      "source_file": "4056133010009-article.json"
+    },
+    {
+      "ean": "4056133010016",
+      "title": "Tube de rangement Ultimate Guard Matpod - Bleu",
+      "slug": "tube-de-rangement-ultimate-guard-matpod-bleu",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/tube-de-rangement-ultimate-guard-matpod-bleu",
+      "source_file": "4056133010016-article.json"
+    },
+    {
+      "ean": "4056133010023",
+      "title": "Tube de rangement Ultimate Guard Matpod - Vert",
+      "slug": "tube-de-rangement-ultimate-guard-matpod-vert",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/tube-de-rangement-ultimate-guard-matpod-vert",
+      "source_file": "4056133010023-article.json"
+    },
+    {
+      "ean": "4056133010092",
+      "title": "Tube de rangement Ultimate Guard Matpod - Noir",
+      "slug": "tube-de-rangement-ultimate-guard-matpod-noir",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/tube-de-rangement-ultimate-guard-matpod-noir",
+      "source_file": "4056133010092-article.json"
+    },
+    {
+      "ean": "4260250074381",
+      "title": "Tapis de jeu Monochrome Noir - Ultimate Guard",
+      "slug": "tapis-de-jeu-monochrome-noir-ultimate-guard",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/tapis-de-jeu-monochrome-noir-ultimate-guard",
+      "source_file": "4260250074381-article.json"
+    },
+    {
+      "ean": "4260250074398",
+      "title": "Tapis de jeu Monochrome Blanc - Ultimate Guard",
+      "slug": "tapis-de-jeu-monochrome-blanc-ultimate-guard",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/tapis-de-jeu-monochrome-blanc-ultimate-guard",
+      "source_file": "4260250074398-article.json"
+    },
+    {
+      "ean": "4260250074411",
+      "title": "Tapis de jeu Monochrome Rouge - Ultimate Guard",
+      "slug": "tapis-de-jeu-monochrome-rouge-ultimate-guard",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/tapis-de-jeu-monochrome-rouge-ultimate-guard",
+      "source_file": "4260250074411-article.json"
+    },
+    {
+      "ean": "4260250077948",
+      "title": "Tapis de jeu Monochrome Violet - Ultimate Guard",
+      "slug": "tapis-de-jeu-monochrome-violet-ultimate-guard",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/tapis-de-jeu-monochrome-violet-ultimate-guard",
+      "source_file": "4260250077948-article.json"
+    },
+    {
+      "ean": "4260250077979",
+      "title": "Tapis de jeu Monochrome Gris - Ultimate Guard",
+      "slug": "tapis-de-jeu-monochrome-gris-ultimate-guard",
+      "price": 139,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/tapis-de-jeu-monochrome-gris-ultimate-guard",
+      "source_file": "4260250077979-article.json"
+    },
+    {
+      "ean": "5053410004705",
+      "title": "Puzzle 500 pièces Animal Crossing - New Horizons",
+      "slug": "puzzle-500-pieces-animal-crossing-new-horizons",
+      "price": 139,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/puzzle-500-pieces-animal-crossing-new-horizons",
+      "source_file": "5053410004705-article.json"
+    },
+    {
+      "ean": "6948154201550",
+      "title": "QiYi - Mastermorphix Pyramide Arrondie",
+      "slug": "qiyi-mastermorphix-pyramide-arrondie",
+      "price": 139,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/qiyi-mastermorphix-pyramide-arrondie",
+      "source_file": "6948154201550-article.json"
+    },
+    {
+      "ean": "6970647061013",
+      "title": "MoYu - Cube 3x3 Magnetic RS3M V5",
+      "slug": "moyu-cube-3x3-magnetic-rs3m-v5",
+      "price": 139,
+      "breadcrumb_level1": "/puzzles-casse-tete/",
+      "final_url": "/puzzles-casse-tete/moyu-cube-3x3-magnetic-rs3m-v5",
+      "source_file": "6970647061013-article.json"
+    },
+    {
+      "ean": "9782374414089",
+      "title": "Trinités : Coffret Collector Alpha & Omega - Le Jeu de Rôle",
+      "slug": "trinites-coffret-collector-alpha-and-omega-le-jeu-de-role",
+      "price": 139,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/trinites-coffret-collector-alpha-and-omega-le-jeu-de-role",
+      "source_file": "9782374414089-article.json"
+    },
+    {
+      "ean": "5060453695906",
+      "title": "Monster Hunter World: The Board Game - Wildspire Waste",
+      "slug": "monster-hunter-world-the-board-game-wildspire-waste",
+      "price": 138.95,
+      "breadcrumb_level1": "/jeux-de-societe/",
+      "final_url": "/jeux-de-societe/monster-hunter-world-the-board-game-wildspire-waste",
+      "source_file": "5060453695906-article.json"
+    },
+    {
+      "ean": "619770007227",
+      "title": "Great War at Sea: Jutland’s Second Edition",
+      "slug": "great-war-at-sea-jutlands-second-edition",
+      "price": 138.95,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/great-war-at-sea-jutlands-second-edition",
+      "source_file": "619770007227-article.json"
+    },
+    {
+      "ean": "817054011308",
+      "title": "Panzer North Africa",
+      "slug": "panzer-north-africa",
+      "price": 138.95,
+      "breadcrumb_level1": "/jeux-d-histoire/",
+      "final_url": "/jeux-d-histoire/panzer-north-africa",
+      "source_file": "817054011308-article.json"
+    },
+    {
+      "ean": "74427388317",
+      "title": "Magic: The Gathering - Tarkir Playmat 230cm",
+      "slug": "magic-the-gathering-tarkir-playmat-230cm",
+      "price": 137.95,
+      "breadcrumb_level1": "/accessoires/",
+      "final_url": "/accessoires/magic-the-gathering-tarkir-playmat-230cm",
+      "source_file": "74427388317-article.json"
     }
   ]
 }

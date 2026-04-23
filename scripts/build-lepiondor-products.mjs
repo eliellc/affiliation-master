@@ -3,7 +3,7 @@
  * Agrège INPUT-DATA-ELIE/lepiondor/data-fiches-produits/*.json
  * → data/lepiondor/products.json (format pipeline).
  *
- * Usage : node scripts/build-lepiondor-products.mjs [--limit 800]
+ * Usage : node scripts/build-lepiondor-products.mjs [--limit 1000]
  */
 import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
@@ -163,9 +163,9 @@ function mapFiche(raw, usedSlugs) {
 
 function parseLimit() {
   const i = process.argv.indexOf("--limit");
-  if (i === -1 || process.argv[i + 1] === undefined) return 800;
+  if (i === -1 || process.argv[i + 1] === undefined) return 1000;
   const n = Number.parseInt(process.argv[i + 1], 10);
-  return Number.isFinite(n) && n > 0 ? n : 800;
+  return Number.isFinite(n) && n > 0 ? n : 1000;
 }
 
 async function main() {
