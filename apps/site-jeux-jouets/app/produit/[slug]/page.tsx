@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { RemoteProductImage } from "@affiliate/ui";
-import Link from "next/link";
+import { ProductPageTemplate } from "@affiliate/ui";
 import {
   buildBreadcrumb,
   getProduct,
@@ -56,7 +55,6 @@ export default async function ProductPage(props: Props) {
   const product = await getProduct(siteId, params.slug);
   if (!product) notFound();
 
-  const primary = product.images[0];
   const html =
     product.content && product.content.length > 0 ? await markdownToHtml(product.content) : "";
 
@@ -89,49 +87,23 @@ export default async function ProductPage(props: Props) {
       />
       {crumbPath ? (
         <>
-          <nav style={{ marginBottom: 16, fontSize: 14 }}>
-            <Link href="/">Accueil</Link>
-            {catRows.map((c) => (
-              <span key={c.path}>
-                {" "}
-                / <Link href={categoryListPublicPath(c.path)}>{c.name}</Link>
-              </span>
-            ))}
-          </nav>
           <JsonLd data={breadcrumbSchema(crumbPath, siteConfig, catRows)} />
         </>
       ) : null}
-
-      <h1 style={{ color: siteConfig.theme.secondaryColor }}>{product.title}</h1>
-      {primary ? (
-        <RemoteProductImage
-          src={primary}
-          alt={product.title}
-          width={640}
-          height={640}
-          priority
-          style={{ maxWidth: "100%", height: "auto", borderRadius: 8 }}
-        />
-      ) : null}
-      {product.description ? <p>{product.description}</p> : null}
-      {product.price != null ? (
-        <p style={{ fontWeight: 700 }}>
-          {product.price.toFixed(2)} {product.currency}
-        </p>
-      ) : null}
-      <p>
-        <a
-          href={`/api/go/${product.slug}`}
-          rel="nofollow sponsored"
-          target="_blank"
-          referrerPolicy="no-referrer-when-downgrade"
-        >
-          Voir le prix
-        </a>
-      </p>
-      {html ? (
-        <div dangerouslySetInnerHTML={{ __html: html }} style={{ marginTop: 24 }} />
-      ) : null}
+      <ProductPageTemplate
+        title={product.title}
+        brand={product.brand}
+        description={product.description}
+        price={product.price}
+        currency={product.currency}
+        rating={product.rating}
+        images={product.images}
+        ctaHref={`/api/go/${product.slug}`}
+        breadcrumb={catRows.map((c) => ({ label: c.name, href: categoryListPublicPath(c.path) }))}
+        richContentHtml={html}
+        shortReview={product.description ?? undefined}
+        disclaimer="Cette page contient des liens d'affiliation."
+      />
     </article>
   );
 }

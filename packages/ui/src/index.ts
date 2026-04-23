@@ -6,3 +6,4 @@ export * from "./faq-block";
 export * from "./cta-block";
 export * from "./site-header";
 export * from "./site-footer";
+export * from "./product-page-template";
