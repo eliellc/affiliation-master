@@ -1,0 +1,67 @@
+.card {
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 12px;
+  padding: 0.9rem;
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-height: 100%;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  margin: 0.1rem 0 0;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  line-height: 1.3;
+  color: var(--color-neutral-900);
+}
+
+.description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-neutral-700);
+}
+
+.price {
+  margin: 0.1rem 0 0;
+  font-family: Georgia, serif;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--color-primary);
+}
+
+.rating {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-neutral-700);
+}
+
+.cta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 10px;
+  padding: 0.55rem 0.95rem;
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  filter: brightness(0.92);
+}

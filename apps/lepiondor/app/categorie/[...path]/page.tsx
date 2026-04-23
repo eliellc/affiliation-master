@@ -19,6 +19,7 @@ import {
 import { siteConfig } from "../../../config";
 import { logDbError } from "../../../lib/log-db-error";
 import { siteId } from "../../../lib/site";
+import styles from "./category-page.module.css";
 
 export const revalidate = 3600;
 
@@ -92,24 +93,32 @@ export default async function CategoryPage(props: Props) {
     }));
     const displayName = catRows.at(-1)?.name ?? titleFromCategoryPath(path);
     return (
-      <div>
-        <nav style={{ marginBottom: 16, fontSize: 14 }}>
-          <Link href="/">Accueil</Link>
-          {catRows.map((c) => (
-            <span key={c.path}>
-              {" "}
-              / <Link href={categoryListPublicPath(c.path)}>{c.name}</Link>
-            </span>
-          ))}
-        </nav>
+      <div className={styles.page}>
+        <div className={styles.stack}>
+          <nav className={styles.bcBar} aria-label="Fil d'ariane">
+            <ol className={styles.bc}>
+              <li>
+                <Link href="/">Accueil</Link>
+              </li>
+              {catRows.map((c) => (
+                <li key={c.path}>
+                  <Link href={categoryListPublicPath(c.path)}>{c.name}</Link>
+                </li>
+              ))}
+            </ol>
+          </nav>
         <JsonLd data={breadcrumbSchema(path, siteConfig, catRows)} />
-        <h1 style={{ color: siteConfig.theme.secondaryColor }}>{displayName}</h1>
-        <p style={{ opacity: 0.85, maxWidth: 560 }}>
-          Le catalogue ne peut pas être chargé (erreur de connexion à la base ou configuration). Vérifiez
-          sur Vercel que <code>DATABASE_URL</code> pointe vers le pooler Supabase (port 6543) avec{" "}
-          <code>pgbouncer=true</code> et <code>connection_limit=1</code>, puis consultez les journaux de
-          déploiement (recherche <code>[lepiondor:db:</code>) pour le message d’erreur exact.
-        </p>
+          <section className={styles.intro}>
+            <h1 className={styles.title}>{displayName}</h1>
+            <p className={styles.warning}>
+              Le catalogue ne peut pas être chargé (erreur de connexion à la base ou configuration).
+              Vérifiez sur Vercel que <code>DATABASE_URL</code> pointe vers le pooler Supabase (port 6543)
+              avec <code>pgbouncer=true</code> et <code>connection_limit=1</code>, puis consultez les
+              journaux de déploiement (recherche <code>[lepiondor:db:</code>) pour le message d’erreur
+              exact.
+            </p>
+          </section>
+        </div>
         <ProductList products={[]} site={siteConfig} />
       </div>
     );
@@ -148,7 +157,7 @@ export default async function CategoryPage(props: Props) {
   const canonicalPath = categoryListPublicPath(path);
 
   return (
-    <div>
+    <div className={styles.page}>
       <PaginationLinks
         prev={
           !hasFilters && page > 1 ? `${canonicalPath}?page=${page - 1}` : undefined
@@ -157,25 +166,36 @@ export default async function CategoryPage(props: Props) {
           !hasFilters && page < totalPages ? `${canonicalPath}?page=${page + 1}` : undefined
         }
       />
-      <nav style={{ marginBottom: 16, fontSize: 14 }}>
-        <Link href="/">Accueil</Link>
-        {catRows.map((c) => (
-          <span key={c.path}>
-            {" "}
-            / <Link href={categoryListPublicPath(c.path)}>{c.name}</Link>
-          </span>
-        ))}
-      </nav>
+      <div className={styles.stack}>
+        <nav className={styles.bcBar} aria-label="Fil d'ariane">
+          <ol className={styles.bc}>
+            <li>
+              <Link href="/">Accueil</Link>
+            </li>
+            {catRows.map((c) => (
+              <li key={c.path}>
+                <Link href={categoryListPublicPath(c.path)}>{c.name}</Link>
+              </li>
+            ))}
+          </ol>
+        </nav>
       <JsonLd data={breadcrumbSchema(path, siteConfig, catRows)} />
-      <h1 style={{ color: siteConfig.theme.secondaryColor }}>{category!.name}</h1>
-      {category!.description ? <p>{category!.description}</p> : null}
+        <section className={styles.intro}>
+          <h1 className={styles.title}>{category!.name}</h1>
+          {category!.description ? <p className={styles.description}>{category!.description}</p> : null}
+        </section>
+      </div>
       <ProductList products={products} site={siteConfig} />
-      <div style={{ marginTop: 24, display: "flex", gap: 16 }}>
+      <div className={styles.pagination}>
         {page > 1 ? (
-          <Link href={`${canonicalPath}?page=${page - 1}`}>Page précédente</Link>
+          <Link className={styles.pagerLink} href={`${canonicalPath}?page=${page - 1}`}>
+            Page précédente
+          </Link>
         ) : null}
         {page < totalPages ? (
-          <Link href={`${canonicalPath}?page=${page + 1}`}>Page suivante</Link>
+          <Link className={styles.pagerLink} href={`${canonicalPath}?page=${page + 1}`}>
+            Page suivante
+          </Link>
         ) : null}
       </div>
     </div>
