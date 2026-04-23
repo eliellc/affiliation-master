@@ -1,8 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { readFile } from "node:fs/promises";
-import nodePath from "node:path";
 import {
   buildBreadcrumb,
   getCategoryByPath,
@@ -22,16 +20,11 @@ import { siteConfig } from "../../../config";
 import { logDbError } from "../../../lib/log-db-error";
 import { siteId } from "../../../lib/site";
 import styles from "./category-page.module.css";
+import categoryDescriptionRows from "../../../data/categories-lepiondor.json";
 
 export const revalidate = 3600;
 
 const FILTER_KEYS = ["brand", "price", "rating", "sort"];
-const CATEGORY_DESCRIPTIONS_FILE = nodePath.join(
-  process.cwd(),
-  "INPUT-DATA-ELIE",
-  "lepiondor",
-  "categories-lepiondor.json"
-);
 
 type CategoryDescriptionRow = {
   slug: string;
@@ -42,18 +35,21 @@ function normalizeCategoryPath(value: string): string {
   return value.replace(/^\/+|\/+$/g, "");
 }
 
-let categoryDescriptionsMapPromise: Promise<Map<string, string>> | null = null;
+/** Copie versionnée de INPUT-DATA-ELIE/lepiondor (dossier ignoré par git, absent en prod). */
+const CATEGORY_DESCRIPTIONS_BY_PATH = new Map<string, string>(
+  (categoryDescriptionRows as CategoryDescriptionRow[]).map((row) => [
+    normalizeCategoryPath(row.slug),
+    row.description,
+  ])
+);
 
-function getCategoryDescriptionsMap(): Promise<Map<string, string>> {
-  if (!categoryDescriptionsMapPromise) {
-    categoryDescriptionsMapPromise = readFile(CATEGORY_DESCRIPTIONS_FILE, "utf-8")
-      .then((raw) => {
-        const rows = JSON.parse(raw) as CategoryDescriptionRow[];
-        return new Map(rows.map((row) => [normalizeCategoryPath(row.slug), row.description]));
-      })
-      .catch(() => new Map<string, string>());
-  }
-  return categoryDescriptionsMapPromise;
+function categoryEditorialDescription(dbPath: string): string | undefined {
+  const key = normalizeCategoryPath(dbPath);
+  const direct = CATEGORY_DESCRIPTIONS_BY_PATH.get(key);
+  if (direct) return direct;
+  const leaf = key.split("/").filter(Boolean).pop();
+  if (leaf) return CATEGORY_DESCRIPTIONS_BY_PATH.get(leaf);
+  return undefined;
 }
 
 function titleFromCategoryPath(categoryPath: string): string {
@@ -81,8 +77,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       return { title: "Catégorie" };
     }
     const customDescription =
-      (await getCategoryDescriptionsMap()).get(normalizeCategoryPath(category.path)) ??
-      category.description;
+      categoryEditorialDescription(category.path) ?? category.description;
     return categoryPageMetadata(
       siteConfig,
       category.path,
@@ -194,8 +189,7 @@ export default async function CategoryPage(props: Props) {
 
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
   const canonicalPath = categoryListPublicPath(path);
-  const customDescription =
-    (await getCategoryDescriptionsMap()).get(normalizeCategoryPath(path)) ?? category!.description;
+  const customDescription = categoryEditorialDescription(path) ?? category!.description;
 
   return (
     <div className={styles.page}>

@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Accessoires",
+    "slug": "/accessoires/",
+    "description": "Découvrez une sélection d’accessoires indispensables pour enrichir, protéger et améliorer votre expérience de jeu."
+  },
+  {
+    "name": "Jeux d'Histoire",
+    "slug": "/jeux-d-histoire/",
+    "description": "Plongez dans des jeux inspirés des grandes périodes historiques et revivez des événements marquants à travers le jeu."
+  },
+  {
+    "name": "Jeux classiques",
+    "slug": "/jeux-classiques/",
+    "description": "Retrouvez les grands incontournables du jeu, intemporels et appréciés par toutes les générations."
+  },
+  {
+    "name": "Presse, Romans, Dés",
+    "slug": "/presse-romans-des/",
+    "description": "Explorez notre sélection de presse spécialisée, romans immersifs et dés pour compléter vos univers ludiques."
+  },
+  {
+    "name": "Jeux traditionnels",
+    "slug": "/jeux-traditionnels/",
+    "description": "Redécouvrez des jeux issus de traditions du monde entier, riches en histoire et en authenticité."
+  },
+  {
+    "name": "Jeux enfants",
+    "slug": "/jeux-enfants/",
+    "description": "Des jeux adaptés aux plus jeunes pour apprendre, s’amuser et développer leur imagination."
+  },
+  {
+    "name": "Jeux de cartes à collectionner",
+    "slug": "/jeux-de-cartes-a-collectionner/",
+    "description": "Collectionnez, échangez et affrontez d’autres joueurs avec les meilleurs jeux de cartes à collectionner."
+  },
+  {
+    "name": "Loisirs créatifs",
+    "slug": "/loisirs-creatifs/",
+    "description": "Exprimez votre créativité avec des activités ludiques et manuelles pour tous les âges."
+  },
+  {
+    "name": "Plein air",
+    "slug": "/plein-air/",
+    "description": "Profitez de jeux et activités à pratiquer en extérieur pour allier divertissement et grand air."
+  },
+  {
+    "name": "Jeux d'ambiance",
+    "slug": "/jeux-d-ambiance/",
+    "description": "Animez vos soirées avec des jeux rapides, fun et accessibles, parfaits pour rire entre amis."
+  },
+  {
+    "name": "Extensions",
+    "slug": "/extensions/",
+    "description": "Prolongez et renouvelez vos jeux préférés grâce à une large sélection d’extensions."
+  },
+  {
+    "name": "Livres & Presse",
+    "slug": "/livres-presse/",
+    "description": "Informez-vous et inspirez-vous avec notre sélection de livres et magazines dédiés au jeu."
+  },
+  {
+    "name": "Jeux de figurines",
+    "slug": "/jeux-de-figurines/",
+    "description": "Entrez dans des univers stratégiques et immersifs avec des jeux mettant en scène des figurines détaillées."
+  },
+  {
+    "name": "Pop culture et produits dérivés",
+    "slug": "/pop-culture-et-produits-derives/",
+    "description": "Retrouvez des produits inspirés de vos univers préférés, entre jeux, objets collectors et goodies."
+  },
+  {
+    "name": "Jeux de Rôle",
+    "slug": "/jeux-de-role/",
+    "description": "Vivez des aventures uniques et créez vos propres histoires grâce aux jeux de rôle."
+  },
+  {
+    "name": "Puzzles & Casse-tête",
+    "slug": "/puzzles-casse-tete/",
+    "description": "Mettez votre logique à l’épreuve avec des puzzles et casse-tête pour tous les niveaux."
+  },
+  {
+    "name": "Jeux de Société",
+    "slug": "/jeux-de-societe/",
+    "description": "Explorez une large sélection de jeux de société pour partager des moments conviviaux autour de la table."
+  }
+]
