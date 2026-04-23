@@ -3,6 +3,7 @@
 name: Build
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
 
@@ -14,9 +15,28 @@ jobs:
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - name: Validate required secrets
+        run: |
+          missing=0
+          for key in DATABASE_URL DIRECT_URL; do
+            if [ -z "${!key}" ]; then
+              echo "::error::Missing required secret: $key"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+      - run: pnpm --filter @affiliate/db exec prisma generate
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
       - run: pnpm test
       - run: pnpm --filter @affiliate/db exec prisma migrate deploy
         env:
