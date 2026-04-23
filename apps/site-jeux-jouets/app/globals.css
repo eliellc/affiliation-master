@@ -1,9 +1,52 @@
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --color-surface: hsl(0 0% 100%);
+  --color-neutral-50: hsl(140 20% 97%);
+  --color-neutral-100: hsl(140 20% 93%);
+  --color-neutral-200: hsl(140 18% 87%);
+  --color-neutral-300: hsl(140 14% 78%);
+  --color-neutral-600: hsl(150 10% 43%);
+  --color-neutral-700: hsl(150 12% 33%);
+  --color-neutral-800: hsl(150 14% 25%);
+  --color-neutral-900: hsl(150 18% 16%);
+  --color-primary: hsl(145 45% 28%);
+  --color-primary-contrast: hsl(0 0% 100%);
+  --color-primary-soft: hsl(145 52% 94%);
+  --color-accent: hsl(42 94% 55%);
+  --color-score-good: hsl(148 55% 38%);
+  --color-score-warn: hsl(33 84% 52%);
+  --color-score-bad: hsl(0 75% 53%);
+  --color-pro-bg: hsl(145 55% 96%);
+  --color-pro-icon: hsl(148 55% 36%);
+  --color-con-bg: hsl(12 100% 97%);
+  --color-con-icon: hsl(14 80% 52%);
+  --color-verdict-bg: hsl(145 45% 94%);
+}
+
+html[data-site="site-jeux-jouets"] {
+  --color-primary: hsl(34 96% 42%);
+  --color-primary-soft: hsl(36 100% 95%);
+  --color-accent: hsl(47 98% 58%);
+  --color-score-good: hsl(145 62% 34%);
+  --color-score-warn: hsl(34 94% 49%);
+  --color-verdict-bg: hsl(36 100% 95%);
+}
+
+html[data-site="lepiondor"] {
+  --color-primary: hsl(145 45% 28%);
+  --color-primary-soft: hsl(145 52% 94%);
+  --color-accent: hsl(42 94% 55%);
+  --color-score-good: hsl(148 55% 38%);
+  --color-score-warn: hsl(33 84% 52%);
+  --color-verdict-bg: hsl(145 45% 94%);
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans), system-ui, sans-serif;
-  color: #1a1a1a;
-  background: #fafafa;
+  color: var(--color-neutral-900);
+  background: var(--color-neutral-50);
 }

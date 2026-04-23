@@ -11,7 +11,7 @@ export const metadata: Metadata = homeMetadata(siteConfig);
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={inter.variable}>
+    <html lang="fr" className={inter.variable} data-site={siteConfig.id}>
       <body>
         <SiteHeader site={siteConfig} />
         <main style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>{props.children}</main>

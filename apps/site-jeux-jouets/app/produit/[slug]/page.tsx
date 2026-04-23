@@ -32,6 +32,24 @@ export async function generateStaticParams() {
 
 type Props = { params: Promise<{ slug: string }> };
 
+function readString(record: Record<string, unknown> | null, keys: string[]) {
+  if (!record) return undefined;
+  for (const key of keys) {
+    const value = record[key];
+    if (typeof value === "string" && value.trim().length > 0) return value;
+  }
+  return undefined;
+}
+
+function readNumber(record: Record<string, unknown> | null, keys: string[]) {
+  if (!record) return undefined;
+  for (const key of keys) {
+    const value = record[key];
+    if (typeof value === "number" && Number.isFinite(value)) return value;
+  }
+  return undefined;
+}
+
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const params = await props.params;
   const product = await getProduct(siteId, params.slug);
@@ -89,7 +107,8 @@ export default async function ProductPage(props: Props) {
     : [];
   const verdictProfiles = Array.isArray(editorial?.verdict_profiles)
     ? editorial.verdict_profiles.filter(
-        (v): v is { label?: string; match?: string } => !!v && typeof v === "object" && typeof v.label === "string"
+        (v): v is { label?: string; match?: string; description?: string; icon?: string } =>
+          !!v && typeof v === "object" && typeof v.label === "string"
       )
     : [];
   const faq = Array.isArray(editorial?.faq)
@@ -134,6 +153,7 @@ export default async function ProductPage(props: Props) {
         rating={product.rating}
         images={product.images}
         ctaHref={`/api/go/${product.slug}`}
+        ctaLabel="Voir la meilleure offre"
         breadcrumb={catRows.map((c) => ({ label: c.name, href: categoryListPublicPath(c.path) }))}
         richContentHtml={html}
         shortReview={
@@ -161,6 +181,28 @@ export default async function ProductPage(props: Props) {
         }
         faq={faq}
         faqTitle={typeof editorial?.faq_title === "string" ? editorial.faq_title : undefined}
+        priceCheckedAt={readString(editorial, ["price_checked_at", "verified_at", "price_verified_at"])}
+        trustSignals={{
+          authorName: readString(editorial, ["author_name", "auteur", "author"]),
+          authorRole: readString(editorial, ["author_role", "auteur_titre"]),
+          updatedAt: readString(editorial, ["updated_at", "last_updated_at", "maj"]),
+          editorialBadge: readString(editorial, ["editorial_badge", "trust_badge"]) ?? "Test independant",
+          comparedCount: readNumber(editorial, ["compared_products", "products_compared", "benchmark_count"]),
+        }}
+        profiles={verdictProfiles.map((v) => {
+          const match = typeof v.match === "string" ? v.match.toLowerCase() : "good";
+          const relevance = match.includes("excellent")
+            ? "excellent"
+            : match.includes("limite") || match.includes("weak") || match.includes("faible")
+              ? "maybe"
+              : "good";
+          return {
+            label: v.label as string,
+            description: typeof v.description === "string" ? v.description : undefined,
+            icon: typeof v.icon === "string" ? v.icon : undefined,
+            relevance,
+          };
+        })}
         disclaimer=""
       />
     </article>
