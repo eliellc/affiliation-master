@@ -15,6 +15,12 @@ export const siteConfig: SiteConfig = {
     favicon: "/logo.svg",
   },
 
+  affiliate: {
+    network: "",
+    tag: "",
+    disclaimer: "",
+  },
+
   nav: [],
 
   seo: {
