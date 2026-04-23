@@ -189,7 +189,6 @@ export default async function CategoryPage(props: Props) {
 
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
   const canonicalPath = categoryListPublicPath(path);
-  const customDescription = categoryEditorialDescription(path) ?? category!.description;
 
   return (
     <div className={styles.page}>
@@ -216,17 +215,7 @@ export default async function CategoryPage(props: Props) {
           </ol>
         </nav>
         <section className={styles.hero}>
-          <p className={styles.eyebrow}>Comparatif et avis 2026</p>
           <h1 className={styles.title}>{category!.name}</h1>
-          <p className={styles.description}>
-            {customDescription ??
-              `Découvrez notre sélection ${category!.name} avec une analyse orientée rapport qualité-prix, style et confort.`}
-          </p>
-          <div className={styles.heroMeta}>
-            <span>{total} modèles analysés</span>
-            <span>Mis à jour aujourd'hui</span>
-            <span>Prix observés en ligne</span>
-          </div>
         </section>
       </div>
 
