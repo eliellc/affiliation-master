@@ -151,6 +151,13 @@
   color: #1b4d3a;
 }
 
+.productLead {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #3a4d42;
+  margin-top: 0.45rem;
+}
+
 .psc {
   background: #eaf4ee;
   border: 1px solid #c2ddd3;
@@ -344,6 +351,9 @@
 }
 
 .pcHd {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
   font-size: 12px;
   letter-spacing: 0.08em;
   font-weight: 700;
@@ -351,11 +361,34 @@
   margin-bottom: 0.8rem;
 }
 
+.pcIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pcIconGood {
+  background: #2d7a57;
+}
+
+.pcIconBad {
+  background: #e03232;
+}
+
 .pcList {
   list-style: none;
 }
 
 .pcItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
   padding: 0.55rem 0;
   border-bottom: 1px solid #f0f5f2;
   font-size: 14px;
@@ -363,6 +396,28 @@
 
 .pcItem:last-child {
   border-bottom: none;
+}
+
+.pcBullet {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pcBulletGood {
+  background: #2d7a57;
+}
+
+.pcBulletBad {
+  background: #e03232;
 }
 
 .specGrid {

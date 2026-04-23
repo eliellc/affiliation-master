@@ -115,7 +115,6 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
               ))}
             </div>
           ) : null}
-          {safeImages.length > 1 ? <p className={styles.galCaption}>Retrouvez plus de photos chez le marchand</p> : null}
         </div>
 
         <div className={styles.info}>
@@ -124,11 +123,7 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
               <span className={styles.badgeStar}>★</span> TEST & AVIS
             </div>
             <h1 className={styles.productTitle}>{title}</h1>
-            {brand ? (
-              <p className={styles.productBrand}>
-                Par <strong>{brand}</strong>
-              </p>
-            ) : null}
+            {description ? <p className={styles.productLead}>{description}</p> : null}
           </div>
 
           <div className={styles.psc}>
@@ -175,7 +170,6 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
             </div>
           ) : null}
 
-          {description ? <p>{description}</p> : null}
           <p className={styles.disclaimer}>{disclaimer}</p>
         </div>
       </div>
@@ -192,11 +186,15 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
           <section className={styles.pcGrid}>
             {prosCons.pros.length > 0 ? (
               <article className={styles.pc}>
-                <h2 className={styles.pcHd}>Points forts</h2>
+                <h2 className={styles.pcHd}>
+                  <span className={`${styles.pcIcon} ${styles.pcIconGood}`}>✓</span>
+                  Points forts
+                </h2>
                 <ul className={styles.pcList}>
                   {prosCons.pros.map((item, idx) => (
                     <li key={`pro-${idx}-${item}`} className={styles.pcItem}>
-                      {item}
+                      <span className={`${styles.pcBullet} ${styles.pcBulletGood}`}>✓</span>
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -204,11 +202,15 @@ export function ProductPageTemplate(props: ProductPageTemplateProps) {
             ) : null}
             {prosCons.cons.length > 0 ? (
               <article className={styles.pc}>
-                <h2 className={styles.pcHd}>Points faibles</h2>
+                <h2 className={styles.pcHd}>
+                  <span className={`${styles.pcIcon} ${styles.pcIconBad}`}>✕</span>
+                  Points faibles
+                </h2>
                 <ul className={styles.pcList}>
                   {prosCons.cons.map((item, idx) => (
                     <li key={`con-${idx}-${item}`} className={styles.pcItem}>
-                      {item}
+                      <span className={`${styles.pcBullet} ${styles.pcBulletBad}`}>✕</span>
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
